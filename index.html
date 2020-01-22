@@ -1,54 +1,121 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<link rel="stylesheet" href="chosen/chosen.css">
+		<!-- Čč Šš Žž -->
 	</head>
 	<body>
-	<div id="banner"></div>
-	<div id="filters"></div>
-	<div id="pdf">
-		<a href="http://google.com" class="submission">
-		<div class="photo">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
+	<div id="banner">
+		<div id="filters">
+			<select data-placeholder="Your Favorite Types of Bear" multiple class="chosen-select" tabindex="8">
+	            <option value=""></option>
+				<optgroup label="Angleščina">
+		            <option>Matejka Kuhar</option>
+		            <option>Maja Lebar Bajec</option>
+		            <option>Ana Likar</option>
+		            <option>Helena Osterman</option>
+		            <option>Irena Škulj</option>
+		            <option>Ksenija Terglav Jakopin</option>
+		            <option>Sandra Uranič</option>
+				</optgroup>
+				<optgroup label="Biologija">
+					<option>Veronika Babič</option>
+					<option>Sonja Kačar</option>
+					<option>Ina Kretič</option>
+				</optgroup>
+				<optgroup label="Filozofija">
+					<option>Gorazd Jurman</option>
+				</optgroup>
+				<optgroup label="Fizika">
+					<option>Ruben Belina</option>
+					<option>Aleš Iršič</option>
+					<option>Natalija Novak</option>
+					<option>Nataša Ranđelović</option>
+				</optgroup>
+				<optgroup label="Francoščina">
+					<option>Neža Umek Podgornik</option>
+				</optgroup>
+				<optgroup label="Geografija">
+					<option>Tatjana Ferder Brunšek</option>
+					<option>Ingrid Florjanc</option>
+					<option>Lea Nemec</option>
+				</optgroup>
+				<option>etc</option>
+				<option>etc</option>
+				<option>etc</option>
+				<option>...</option>
+        	</select>
+			<script>
+      			$(document).ready(function() {
+        			$(".chosen-select").chosen();
+				});
+    		</script>
+			<script src="chosen/chosen.jquery.min.js"></script>
 		</div>
-		<div class="text">
-			<p class="title">Vektorji in premice v dvodimenzionalni ravnini & ostali memi tega stoletja (in prejsnjega in predprejsnjega)</p>
-			<p class="profesor">m.dobljekar</p>
-			<p class="author">avtor masa</p>
-		</div>
-		</a>
-		<a href="http://google.com" class="submission">
-		<div class="photo">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
-		</div>
-		<div class="text">
-			<p class="title">Vektorji</p>
-			<p>m.dobljekar</p>
-			<p>avtor masa</p>
-		</div>
-		</a>
-		<a href="http://google.com" class="submission">
-		<div class="photo">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
-		</div>
-		<div class="text">
-			<p class="title">Vektorji</p>
-			<p>m.dobljekar</p>
-			<p>avtor masa</p>
-		</div>
-		</a>
+		<script>
+		function openMenu(menu) {
+			document.getElementById(menu).classList.toggle("show");
+		}
+
+		function filterFunction() {
+			var input, filter, ul, li, button, i;
+			input = document.getElementById("search_prof");
+			filter = input.value.toUpperCase();
+			div = document.getElementById("dropdown_prof");
+			a = div.getElementsByTagName("a");
+			for (i = 0; i < a.length; i++) {
+				txtValue = a[i].textContent || a[i].innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					a[i].style.display = "";
+				} else {
+					a[i].style.display = "none";
+				}
+			}
+		}
+		</script>
 	</div>
+	<main>
+		<a href="http://google.com" class="submission">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
+			</div>
+			<div class="text">
+				<p class="title">Vektorji in premice v dvodimenzionalni ravnini & ostali memi tega stoletja (in prejsnjega in predprejsnjega)</p>
+				<p class="professor">Prof. Dobljekar</p>
+				<p class="author">masa.kovac</p>
+			</div>
+		</a>
+		<a href="http://google.com" class="submission">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
+			</div>
+			<div class="text">
+				<p class="title">Slovenci v 3. svetovni vojni</p>
+				<p class="professor">Prof. Marinic</p>
+				<p class="author">masa.kovac</p>
+			</div>
+		</a>
+		<a href="http://google.com" class="submission">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
+			</div>
+			<div class="text">
+				<p class="title">Marxisticne fore in propad kapitalizma</p>
+				<p class="professor">Prof. Jurman</p>
+				<p class="author">masa.kovac</p>
+			</div>
+		</a>
+	</main>
 	<style>
 	.submission {
-		display:flex;
-		flex-wrap; wrap;
-		border-style: solid;
-		border-color: black;
-		border-width: 1px;
+		display: flex;
+		border: 1px solid black;
 		border-radius: 3px;
 		width: 300px;
 		padding: 10px;
 		box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-		margin-bottom: 2em;
+		margin-top: 2em;
 	}
 	.text {
 		flex: 1;
@@ -61,8 +128,11 @@
 		font-weight: bold;
 
 	}
-	h1,p {
-		margin:2px;
+	p {
+		margin: 2px;
+	}
+	p.author, p.professor {
+		color: rgba(0,0,0,.7);
 	}
 	body {
 		font-family: "Roboto";
@@ -84,7 +154,7 @@
 		height: 200px;
 		width: 100%;
 	}
-	#pdf {
+	main {
 		display:flex;
 		justify-content: center;
 		align-items: center;
