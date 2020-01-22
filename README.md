@@ -1,6 +1,7 @@
 # ekom
 eKomunizem
 
+## TODO:
  - [ ] siv text za author & prof
  - [ ] filtri na banner
  - [ ] wallpaper image
@@ -9,6 +10,5 @@ eKomunizem
  - [ ] tags list
  - [ ] tags display na submissionu
  - [ ] ledina logo
- 
  - [ ] ? ikonce se pred avtor & prof
  - [ ] ? slikca na sredini submissiona
