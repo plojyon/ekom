@@ -7,6 +7,7 @@ eKomunizem
  - [ ] wallpaper image
  - [ ] ikonce namest pdf slike
  - [ ] 2 stolpca za submissione
+ - [ ] prof pa avtor nej bosta aligned na dno submission boxa
  - [ ] tags list
  - [ ] tags display na submissionu
  - [ ] ledina logo
