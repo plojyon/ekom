@@ -2,7 +2,7 @@
 eKomunizem
 
 ## TODO:
- - [ ] siv text za author & prof
+ - [x] siv text za author & prof
  - [ ] filtri na banner
  - [ ] wallpaper image
  - [ ] ikonce namest pdf slike
