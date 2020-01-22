@@ -3,12 +3,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	</head>
 	<body>
-	<div id="banner">
-		<div id="header">
-		<h1>eMASA<h1>
-		<p>testtesttest<p>
-		</div>
-	</div>
+	<div id="banner"></div>
 	<div id="filters"></div>
 	<div id="pdf">
 		<a href="http://google.com" class="submission">
@@ -16,9 +11,17 @@
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
 		</div>
 		<div class="text">
-			<h1>vektorji</h1>
-			<p>vektorji</p>
-			<P>matematika</p>
+			<p class="title">Vektorji in premice v dvodimenzionalni ravnini & ostali memi tega stoletja (in prejsnjega in predprejsnjega)</p>
+			<p class="profesor">m.dobljekar</p>
+			<p class="author">avtor masa</p>
+		</div>
+		</a>
+		<a href="http://google.com" class="submission">
+		<div class="photo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
+		</div>
+		<div class="text">
+			<p class="title">Vektorji</p>
 			<p>m.dobljekar</p>
 			<p>avtor masa</p>
 		</div>
@@ -28,21 +31,7 @@
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
 		</div>
 		<div class="text">
-			<h1>vektorji</h1>
-			<p>vektorji</p>
-			<P>matematika</p>
-			<p>m.dobljekar</p>
-			<p>avtor masa</p>
-		</div>
-		</a>
-		<a href="http://google.com" class="submission">
-		<div class="photo">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
-		</div>
-		<div class="text">
-			<h1>vektorji</h1>
-			<p>vektorji</p>
-			<P>matematika</p>
+			<p class="title">Vektorji</p>
 			<p>m.dobljekar</p>
 			<p>avtor masa</p>
 		</div>
@@ -50,34 +39,38 @@
 	</div>
 	<style>
 	.submission {
-		display:flex; flex-wrap; wrap;
+		display:flex;
+		flex-wrap; wrap;
 		border-style: solid;
 		border-color: black;
 		border-width: 1px;
 		border-radius: 3px;
-		width:300px;
-		padding:10px;
+		width: 300px;
+		padding: 10px;
 		box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 		margin-bottom: 2em;
 	}
 	.text {
-		flex:1;
-		margin-left:5px;
-		text-decoration:none;
-		color:black;
+		flex: 1;
+		margin-left: 10px;
+		text-decoration: none;
+		color: black;
+	}
+	.title {
+		font-size: 1.3em;
+		font-weight: bold;
+
 	}
 	h1,p {
 		margin:2px;
 	}
 	body {
 		font-family: "Roboto";
-		margin: 0px;
+		margin: 0;
+		background-image: image('backgrounds/index.jpg');
 	}
 	#banner	{
-		display: flex; flex-wrap; wrap;
-		justify-content: center;
-		height: 200px;
-		width: 100%;
+		height: 20px;
 		background-color: red;
 	}
 	#header {
