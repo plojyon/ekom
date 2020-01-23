@@ -1,0 +1,61 @@
+.submission {
+	display: flex;
+	border: 1px solid black;
+	border-radius: 3px;
+	width: 300px;
+	padding: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	margin-top: 2em;
+}
+.text {
+	flex: 1;
+	margin-left: 10px;
+	text-decoration: none;
+	color: black;
+}
+.title {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+p {
+	margin: 2px;
+}
+p.author, p.professor {
+	color: rgba(0,0,0,.7);
+}
+.tags {
+	margin: 0.5em 0;
+}
+.tag {
+	background-color: lightgray;
+	padding: 0.1em 0.4em;
+	border-radius: 5px;
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+body {
+	font-family: "Roboto";
+	margin: 0;
+	background-image: image('backgrounds/index.jpg');
+}
+#banner	{
+	height: 20px;
+	background-color: red;
+}
+#header {
+	color: black;
+	font: Helvetica;
+}
+a.submission {
+	text-decoration: none;
+}
+#filters {
+	height: 200px;
+	width: 100%;
+}
+main {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
