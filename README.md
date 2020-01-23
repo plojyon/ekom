@@ -9,7 +9,7 @@ eKomunizem
  - [ ] 2 stolpca za submissione
  - [ ] prof pa avtor nej bosta aligned na dno submission boxa
  - [ ] tags list
- - [ ] tags display na submissionu
+ - [x] tags display na submissionu
  - [ ] ledina logo
  - [ ] ? ikonce se pred avtor & prof
  - [ ] ? slikca na sredini submissiona

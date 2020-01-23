@@ -10,8 +10,6 @@
 .text {
 	flex: 1;
 	margin-left: 10px;
-	text-decoration: none;
-	color: black;
 }
 .title {
 	font-size: 1.3em;
@@ -24,7 +22,7 @@ p.author, p.professor {
 	color: rgba(0,0,0,.7);
 }
 .tags {
-	margin: 0.5em 0;
+	margin: 0.3em 0;
 }
 .tag {
 	background-color: lightgray;
@@ -46,8 +44,9 @@ body {
 	color: black;
 	font: Helvetica;
 }
-a.submission {
+a.title {
 	text-decoration: none;
+	color: black;
 }
 #filters {
 	height: 200px;

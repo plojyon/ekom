@@ -4,6 +4,7 @@
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="chosen/chosen.css">
+		<script src="chosen/chosen.jquery.min.js"></script>
 		<!-- Čč Šš Žž -->
 	</head>
 	<body>
@@ -55,76 +56,74 @@
         			$(".chosen-select").chosen();
 				});
     		</script>
-			<script src="chosen/chosen.jquery.min.js"></script>
 		</div>
 		<script>
-		function openMenu(menu) {
-			document.getElementById(menu).classList.toggle("show");
-		}
-
-		function filterFunction() {
-			var input, filter, ul, li, button, i;
-			input = document.getElementById("search_prof");
-			filter = input.value.toUpperCase();
-			div = document.getElementById("dropdown_prof");
-			a = div.getElementsByTagName("a");
-			for (i = 0; i < a.length; i++) {
-				txtValue = a[i].textContent || a[i].innerText;
-				if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					a[i].style.display = "";
-				} else {
-					a[i].style.display = "none";
+			function openMenu(menu) {
+				document.getElementById(menu).classList.toggle("show");
+			}
+			function filterFunction() {
+				var input, filter, ul, li, button, i;
+				input = document.getElementById("search_prof");
+				filter = input.value.toUpperCase();
+				div = document.getElementById("dropdown_prof");
+				a = div.getElementsByTagName("a");
+				for (i = 0; i < a.length; i++) {
+					txtValue = a[i].textContent || a[i].innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						a[i].style.display = "";
+					} else {
+						a[i].style.display = "none";
+					}
 				}
 			}
-		}
 		</script>
 	</div>
 	<main>
-		<a href="http://google.com" class="submission">
+		<div class="submission">
 			<div>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
 			</div>
 			<div class="text">
-				<p class="title">Vektorji in premice v dvodimenzionalni ravnini & ostali memi tega stoletja (in prejsnjega in predprejsnjega)</p>
+				<a href="http://google.com" class="title">Vektorji in premice v dvodimenzionalni ravnini & ostali memi tega stoletja (in prejsnjega in predprejsnjega)</a>
 				<p class="tags">
-					<span class="tag">Vektorji</span>
-					<span class="tag">Memi</span>
-					<span class="tag">Premice</span>
-					<span class="tag">Dvodimenzionalne ravnine</span>
-					<span class="tag">Letosnje stoletje</span>
+					<a class="tag">Vektorji</a>
+					<a class="tag">Memi</a>
+					<a class="tag">Premice</a>
+					<a class="tag">Dvodimenzionalne ravnine</a>
+					<a class="tag">Letosnje stoletje</a>
 				</p>
 				<p class="professor">Prof. Dobljekar</p>
 				<p class="author">masa.kovac</p>
 			</div>
-		</a>
-		<a href="http://google.com" class="submission">
+		</div>
+		<div class="submission">
 			<div>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
 			</div>
 			<div class="text">
-				<p class="title">Slovenci v 3. svetovni vojni</p>
+				<a href="http://google.com" class="title">Slovenci v 3. svetovni vojni</a>
 				<p class="tags">
-					<span class="tag">Slovenci</span>
-					<span class="tag">WW3</span>
+					<a class="tag">Slovenci</a>
+					<a class="tag">WW3</a>
 				</p>
 				<p class="professor">Prof. Marinic</p>
 				<p class="author">masa.kovac</p>
 			</div>
-		</a>
-		<a href="http://google.com" class="submission">
+		</div>
+		<div class="submission">
 			<div>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
 			</div>
 			<div class="text">
-				<p class="title">Marxisticne fore in propad kapitalizma</p>
+				<a href="http://google.com" class="title">Marxisticne fore in propad kapitalizma</a>
 				<p class="tags">
-					<span class="tag">Karl Marx</span>
-					<span class="tag">eKomunizem</span>
-					<span class="tag">propadanje</span>
+					<a class="tag">Karl Marx</a>
+					<a class="tag">eKomunizem</a>
+					<a class="tag">propadanje</a>
 				</p>
 				<p class="professor">Prof. Jurman</p>
 				<p class="author">masa.kovac</p>
 			</div>
-		</a>
+		</div>
 	</main>
 </html>
