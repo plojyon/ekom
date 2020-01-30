@@ -1,7 +1,6 @@
 .submission {
 	display: flex;
 	border: 1px solid black;
-	max-width: 300px;
 	border-radius: 3px;
 	padding: 10px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
