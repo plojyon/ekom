@@ -6,6 +6,7 @@
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 	margin: 0 auto;
 	margin-bottom: 1em;
+	background-color: white;
 }
 .submission img {
 	width: 100px;
@@ -39,7 +40,6 @@ p.author, p.professor {
 body {
 	font-family: "Roboto";
 	margin: 0;
-	background-image: image('backgrounds/index.jpg');
 }
 #banner	{
 	display: flex;
