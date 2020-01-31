@@ -11,5 +11,5 @@ eKomunizem
  - [ ] tags list
  - [x] tags display na submissionu
  - [x] ledina logo
- - [ ] ? ikonce se pred avtor & prof
- - [x] ? (delno) slikca na sredini submissiona
+ - [x] ? (delno) ikonce se pred avtor & prof
+ - [ ] ? slikca na sredini submissiona
