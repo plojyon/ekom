@@ -41,9 +41,7 @@
 	<body>
 	<div id="banner">
 		<a href="https://www.ledina.si/">
-			<div id="logo">
-				<img src="media/logo10.png">
-			</div>
+			<img src="media/ledina_logo.png">
 		</a>
 		<div id="naslov">
 			 <h1>eMASA<br>test site<br>beep boop<h1>
@@ -171,26 +169,6 @@
 				});
     		</script>
 		</div>
-		<script>
-			function openMenu(menu) {
-				document.getElementById(menu).classList.toggle("show");
-			}
-			function filterFunction() {
-				var input, filter, ul, li, button, i;
-				input = document.getElementById("search_prof");
-				filter = input.value.toUpperCase();
-				div = document.getElementById("dropdown_prof");
-				a = div.getElementsByTagName("a");
-				for (i = 0; i < a.length; i++) {
-					txtValue = a[i].textContent || a[i].innerText;
-					if (txtValue.toUpperCase().indexOf(filter) > -1) {
-						a[i].style.display = "";
-					} else {
-						a[i].style.display = "none";
-					}
-				}
-			}
-		</script>
 	</div>
 	<main>
 		<div id="grid">
