@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="chosen/chosen.css">
 		<script src="chosen/chosen.jquery.min.js"></script>
+		<script src="generate_submissions.js"></script>
 		<!-- Čč Šš Žž -->
 		<!--
 		=============
@@ -54,7 +55,7 @@
 				<option value="3">3. Letnik</option>
 				<option value="4">4. Letnik</option>
 			</select>
-			Verified<input type="checkbox" name="Verified">
+			Verified <input type="checkbox" name="Verified">
 			<select data-placeholder="Your Favorite Types of Bear" multiple class="chosen-select" tabindex="8">
 				<optgroup label="Angleščina">
 		            <option>Matejka Kuhar</option>
@@ -193,113 +194,6 @@
 	</div>
 	<main>
 		<div id="grid">
-			<script>
-				icon_link = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png";
-				submissions = [
-					{
-						"title": "Deutsche grammatik oder wendische Sprache",
-						"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
-						"author": "yon.je.ploj",
-						"professor": "Prof. Vojsk"
-					},
-					{
-						"title": "Kuharske bukve",
-						"tags": ["kuharski vuk", "bukve", "hrana"],
-						"author": "vodnik.valentin",
-						"professor": "Prof. Ceklin"
-					},
-					{
-						"title": "Programiranje z Javo ali Zakaj so moje ocene slabe",
-						"tags": ["Ta nesrecni dan", "Maticek se zeni", "C/C++"],
-						"author": "spontana geneza datoteke",
-						"professor": "Prof. Burger"
-					},
-					{
-						"title": "Kemija v 1. letniku",
-						"tags": ["Kisline, baze in soli", "Poimenovanje", "Periodni sistem"],
-						"author": "masa.kovac",
-						"professor": "Prof. Cebin"
-					},
-					{
-						"title": "Moj zvezk",
-						"tags": [],
-						"author": "yon.ploj",
-						"professor": "Prof. Levstek"
-					},
-					{
-						"title": "Tvoj zvezk",
-						"tags": ["lep in urejen"],
-						"author": "yon.ploj",
-						"professor": "Prof. Levstek"
-					},
-					{
-						"title": "Recept za palacinke",
-						"tags": ["moka", "jajca", "mleko", "sladkor", "nutella"],
-						"author": "namazes z Nutello",
-						"professor": "speces u ponvi"
-					},
-					{
-						"title": "Kaj vse mam na mizi?",
-						"tags": ["zvezke", "cokolado", "racunalnik", "kozarce", "kroznike", "slusalke", "pisala", "domaco nalogo", "drobtine", "umazano zlico", "smeti", "vodko"],
-						"author": "sej bom pospravu",
-						"professor": "untidy geng"
-					},
-				];
-
-				window.onload = function() {
-					submissions.forEach(createSubmission);
-				}
-
-				function applyTagFilter(tag) {
-					console.log(tag);
-				}
-
-				function createSubmission(sub, index, arr) {
-
-					img = document.createElement("img");
-					img.src = icon_link;
-					img_div = document.createElement("div");
-					img_div.appendChild(img);
-
-					title = document.createElement("a");
-					title.classList.add("title");
-					title.href = "http://google.com";
-					title.innerText = sub.title;
-
-					tags = document.createElement("p");
-					tags.classList.add("tags");
-					for (tag in sub.tags) {
-						t = document.createElement("a");
-						t.classList.add("tag");
-						t.innerText = sub.tags[tag];
-						t.onclick = ((self) => { applyTagFilter(self.target.text); });
-						tags.appendChild(t);
-						tags.appendChild(document.createTextNode(" "));
-					}
-
-					professor = document.createElement("p");
-					professor.classList.add("professor");
-					professor.innerText = sub.professor;
-
-					author = document.createElement("p");
-					author.classList.add("author");
-					author.innerText = sub.author;
-
-					text_div = document.createElement("div");
-					text_div.classList.add("text");
-					text_div.appendChild(title);
-					text_div.appendChild(tags);
-					text_div.appendChild(professor);
-					text_div.appendChild(author);
-
-					submission = document.createElement("div");
-					submission.classList.add("submission");
-					submission.appendChild(img_div);
-					submission.appendChild(text_div);
-
-					document.getElementById("grid").appendChild(submission);
-				}
-			</script>
 			<div class="submission">
 				<div>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
@@ -316,35 +210,6 @@
 					</p>
 					<p class="professor"><i class="fas fa-chalkboard-teacher"></i>&nbsp;Prof. Dobljekar</p>
 					<p class="author"><i class="fas fa-pencil-alt"></i>&nbsp;masa.kovac</p>
-				</div>
-			</div>
-			<div class="submission">
-				<div>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
-				</div>
-				<div class="text">
-					<a href="http://google.com" class="title">Slovenci v 3. svetovni vojni</a>
-					<p class="tags">
-						<a class="tag">Slovenci</a>
-						<a class="tag">WW3</a>
-					</p>
-					<p class="professor">Prof. Marinic</p>
-					<p class="author">masa.kovac</p>
-				</div>
-			</div>
-			<div class="submission">
-				<div>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" width="100px">
-				</div>
-				<div class="text">
-					<a href="http://google.com" class="title">Marxisticne fore in propad kapitalizma</a>
-					<p class="tags">
-						<a class="tag">Karl Marx</a>
-						<a class="tag">eKomunizem</a>
-						<a class="tag">propadanje</a>
-					</p>
-					<p class="professor">Prof. Jurman</p>
-					<p class="author">masa.kovac</p>
 				</div>
 			</div>
 		</div>
