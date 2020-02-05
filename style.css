@@ -44,7 +44,7 @@ body {
 #banner	{
 	display: flex;
 	justify-content: space-around;
-	height: 150px;
+	height: 160px;
 	background-color: red;
 }
 #naslov {
@@ -73,4 +73,7 @@ main {
 #grid {
 	margin-top: 1em;
 	padding-bottom: 3em;
+}
+#details {
+	width: 500px;
 }
