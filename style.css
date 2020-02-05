@@ -6,7 +6,7 @@
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 	margin: 0 auto;
 	margin-bottom: 1em;
-	background-color: white;
+	background-color: rgba(255,255,255,0.8);
 }
 .submission img {
 	width: 100px;
@@ -40,12 +40,16 @@ p.author, p.professor {
 body {
 	font-family: "Roboto";
 	margin: 0;
+	background-image: url("backgrounds/kemija.jpg");
+	background-attachment: fixed;
+    background-position: center top;
+	background-size: cover;
 }
 #banner	{
 	display: flex;
 	justify-content: space-around;
 	height: 160px;
-	background-color: red;
+	background-color: rgba(0,0,0,.5);
 }
 #naslov {
 	color: white;
