@@ -48,7 +48,7 @@ body {
 }
 #banner	{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	height: 160px;
 	background-color: rgba(0,0,0,.5);
 }
@@ -92,9 +92,11 @@ aside {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin: 50px;
 }
 nav a {
 	color: white;
 	margin: 10px;
 	padding: 5px;
+	font-size: 17px;
 }
