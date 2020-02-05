@@ -7,6 +7,7 @@
 	margin: 0 auto;
 	margin-bottom: 1em;
 	background-color: rgba(255,255,255,0.8);
+	width: 85%;
 }
 .submission img {
 	width: 100px;
@@ -71,15 +72,30 @@ a.title {
 	flex-direction: column;
 }
 main {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 #grid {
 	margin-top: 1em;
 	padding-bottom: 3em;
+	flex: 5;
 }
 #details {
 	width: 500px;
+}
+aside {
+	flex: 1;
+	width: 10%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+	height: 150px;
+}
+#link {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.povezave {
 }
