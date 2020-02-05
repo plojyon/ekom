@@ -67,6 +67,8 @@ a.title {
 	margin: 25px;
 	padding: 25px;
 	background-color: grey;
+	display: flex;
+	flex-direction: column;
 }
 main {
 	display:flex;
