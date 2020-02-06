@@ -72,9 +72,6 @@ main {
 	margin-top: 1em;
 	padding-bottom: 3em;
 }
-#details {
-	width: 500px;
-}
 aside {
 	width: 10%;
 	position: -webkit-sticky;
