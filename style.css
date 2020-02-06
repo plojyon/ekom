@@ -77,13 +77,20 @@ aside {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 20px;
-	height: 150px;
+	height: 100%;
 	border: dashed;
 	margin: 25px;
 	padding: 25px;
+	padding-top: 10px;
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
+}
+aside > * {
+	margin: 10px 0;
+}
+select {
+	width: 100%;
 }
 nav {
 	display: flex;
