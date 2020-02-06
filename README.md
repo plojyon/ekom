@@ -13,4 +13,3 @@ eKomunizem
  - [x] tags display na submissionu
  - [x] ledina logo
  - [x] ikonce se pred avtor & prof
- - [ ] title za spletno stran

@@ -53,10 +53,6 @@ body {
 	background-color: rgba(0,0,0,.5);
 	background: linear-gradient(to right, white, white, rgba(0,0,0,.5), rgba(0,0,0,.5))
 }
-#naslov {
-	/* ce se bo kdaj se rabilo */
-	display: none;
-}
 #header {
 	color: black;
 	font: Helvetica;
