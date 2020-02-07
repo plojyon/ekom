@@ -4,48 +4,56 @@ submissions = [
 		"title": "Deutsche grammatik oder wendische Sprache",
 		"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
 		"author": "yon.je.ploj",
+		"predmet": "nem",
 		"professor": "Prof. Vojsk"
 	},
 	{
 		"title": "Kuharske bukve",
 		"tags": ["kuharski vuk", "bukve", "hrana"],
 		"author": "vodnik.valentin",
+		"predmet": "psh",
 		"professor": "Prof. Ceklin"
 	},
 	{
 		"title": "Programiranje z Javo ali Zakaj so moje ocene slabe",
 		"tags": ["Ta nesrecni dan", "Maticek se zeni", "C/C++"],
 		"author": "spontana geneza datoteke",
+		"predmet": "inf",
 		"professor": "Prof. Burger"
 	},
 	{
 		"title": "Kemija v 1. letniku",
 		"tags": ["Kisline, baze in soli", "Poimenovanje", "Periodni sistem"],
 		"author": "masa.kovac",
+		"predmet": "kem",
 		"professor": "Prof. Cebin"
 	},
 	{
 		"title": "Moj zvezk",
 		"tags": [],
 		"author": "yon.ploj",
+		"predmet": "ped",
 		"professor": "Prof. Levstek"
 	},
 	{
 		"title": "Tvoj zvezk",
 		"tags": ["lep in urejen"],
 		"author": "yon.ploj",
+		"predmet": "mat",
 		"professor": "Prof. Levstek"
 	},
 	{
 		"title": "Recept za palacinke",
 		"tags": ["moka", "jajca", "mleko", "sladkor", "nutella"],
 		"author": "namazes z Nutello",
+		"predmet": "mat",
 		"professor": "speces u ponvi"
 	},
 	{
 		"title": "Kaj vse mam na mizi?",
 		"tags": ["zvezke", "cokolado", "racunalnik", "kozarce", "kroznike", "slusalke", "pisala", "domaco nalogo", "drobtine", "umazano zlico", "smeti", "vodko"],
 		"author": "sej bom pospravu",
+		"predmet": "spo",
 		"professor": "untidy geng"
 	},
 ];
@@ -102,6 +110,7 @@ function createSubmission(sub, index, arr) {
 
 	submission = document.createElement("div");
 	submission.classList.add("submission");
+	submission.classList.add(sub.predmet);
 	submission.appendChild(img_div);
 	submission.appendChild(text_div);
 
