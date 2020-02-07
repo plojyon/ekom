@@ -1,4 +1,4 @@
-.submission {
+.submission, #noresult {
 	display: flex;
 	border: 1px solid black;
 	border-radius: 3px;
@@ -106,4 +106,7 @@ nav a {
 }
 nav a:hover {
 	text-decoration: underline;
+}
+#noresult {
+	width: 50%;
 }
