@@ -1,4 +1,4 @@
-.submission, #noresult {
+.submission {
 	display: flex;
 	border: 1px solid black;
 	border-radius: 3px;
@@ -12,11 +12,11 @@
 .submission img {
 	width: 100px;
 }
-.text {
+.submission_text {
 	flex: 1;
 	margin-left: 10px;
 }
-.title {
+.submission_title {
 	font-size: 1.3em;
 	font-weight: bold;
 }
@@ -57,7 +57,7 @@ body {
 	color: black;
 	font: Helvetica;
 }
-a.title {
+a.submission_title {
 	text-decoration: none;
 	color: black;
 }
@@ -65,7 +65,7 @@ main {
 	display: flex;
 	justify-content: space-around;
 }
-#grid {
+#submissions_list {
 	margin-top: 1em;
 	padding-bottom: 3em;
 	margin-left: 25px;
@@ -112,7 +112,7 @@ nav a:hover {
 	display: flex;
 	justify-content: center;
 }
-.icon {
+.subject_icon {
 	font-size: 5em;
 	border-style: solid;
 	margin: 10px;
@@ -120,7 +120,7 @@ nav a:hover {
 	width: 1.2em;
 	text-align: center;
 }
-#subject {
+#subject_name {
 	display: flex;
 	justify-content: center;
 	font-size: 0.9em;

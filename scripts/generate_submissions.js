@@ -73,11 +73,11 @@ function createSubmission(sub, index, arr) {
 	icon.classList.add(icon_classes[0]);
 	icon.classList.add(icon_classes[1]);
 	icon_div = document.createElement("div");
-	icon_div.classList.add("icon");
+	icon_div.classList.add("subject_icon");
 	icon_div.appendChild(icon);
 
 	title = document.createElement("a");
-	title.classList.add("title");
+	title.classList.add("submission_title");
 	title.href = "http://google.com";
 	title.innerText = sub.title;
 
@@ -109,7 +109,7 @@ function createSubmission(sub, index, arr) {
 	author.appendChild(document.createTextNode(" "+sub.author));
 
 	text_div = document.createElement("div");
-	text_div.classList.add("text");
+	text_div.classList.add("submission_text");
 	text_div.appendChild(title);
 	text_div.appendChild(tags);
 	text_div.appendChild(professor);
@@ -121,5 +121,5 @@ function createSubmission(sub, index, arr) {
 	submission.appendChild(icon_div);
 	submission.appendChild(text_div);
 
-	document.getElementById("grid").appendChild(submission);
+	document.getElementById("submissions_list").appendChild(submission);
 }
