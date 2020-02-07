@@ -50,10 +50,6 @@ submissions = [
 	},
 ];
 
-window.onload = function() {
-	submissions.forEach(createSubmission);
-}
-
 function applyTagFilter(tag) {
 	console.log(tag);
 }

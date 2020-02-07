@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="chosen/chosen.css">
 		<script src="chosen/chosen.jquery.min.js"></script>
-		<script src="generate_submissions.js"></script>
+		<script src="scripts/generate_submissions.js"></script>
+		<script src="scripts/generate_predmeti.js"></script>
 		<!-- Čč Šš Žž -->
 		<!--
 		=============
@@ -39,6 +40,12 @@
 		avtor <i class="fas fa-pencil-alt"></i>
 		profesor <i class="fas fa-chalkboard-teacher"></i>
 		-->
+		<script>
+			window.onload = function() {
+				submissions.forEach(createSubmission);
+				predmeti.forEach(addPredmet);
+			}
+		</script>
 	</head>
 	<body>
 	<div id="banner">
@@ -90,28 +97,8 @@
 				<div id="predmet">
 					<p>Predmet:<p>
 					<select id="predmet_select">
-						<option value="ang">Angleščina</option>
-						<option value="bio">Biologija</option>
-						<option value="fil">Filozofija</option>
-						<option value="fiz">Fizika</option>
-						<option value="fra">Francoščina</option>
-						<option value="geo">Geografija</option>
-						<option value="gla">Glasba</option>
-						<option value="inf">Informatika</option>
-						<option value="ita">Italijanščina</option>
-						<option value="kem">Kemija</option>
-						<option value="lum">Likovna umetnost</option>
-						<option value="mat">Matematika</option>
-						<option value="nem">Nemščina</option>
-						<option value="ped">Pedagogika</option>
-						<option value="psh">Psihologija</option>
-						<option value="rus">Ruščina</option>
-						<option value="slo">Slovenščina</option>
-						<option value="soc">Sociologija</option>
-						<option value="spa">Španščina</option>
-						<option value="svz">Športna vzgoja</option>
-						<option value="uzg">Umetnostna zgodovina</option>
-						<option value="zgo">Zgodovina</option>
+						<!-- Filled by javascript -->
+						<!-- <option value="mat">Matematika</option> -->
 					</select>
 				</div>
 				<div>
