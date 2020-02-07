@@ -120,3 +120,8 @@ nav a:hover {
 	width: 1.2em;
 	text-align: center;
 }
+#subject {
+	display: flex;
+	justify-content: center;
+	font-size: 0.9em;
+}
