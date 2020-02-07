@@ -29,10 +29,11 @@
 		Psihologija	(mozgani)		<i class="fas fa-brain"></i>
 		Slovenscina	(knjiga)		<i class="fas fa-book"></i>
 		Sociologija	(2 clovecka)	<i class="fas fa-user-friends"></i>
-		Sportna (zoga)				<i class="fa fa-fotbol-o"></i>
+		Sportna (zoga)				<i class="fa fa-futbol"></i>
 		Umetnostna zgo (stavba)		<i class="fa fa-landmark"></i>
 		Zgodovina (slavolok) 		<i class="fas fa-history"></i>
-		Tutorstvo (gradiation cap)	<i class="fas fa-gradiation-cap"></i>
+		Neznan predmet (graduation) <i class="fas fa-graduation-cap"></i>
+		Tutorstvo (graduation cap)	<i class="fas fa-graduation-cap"></i>
 		Objava zapiskov (knjiga)	<i class="fa fa-book"></i>
 		Ledina website (stavba)		<i class="fa fa-school"></i>
 
@@ -43,7 +44,7 @@
 		<script>
 			window.onload = function() {
 				submissions.forEach(createSubmission);
-				predmeti.forEach(addPredmet);
+				Object.keys(predmeti).forEach(addPredmet);
 			}
 		</script>
 	</head>

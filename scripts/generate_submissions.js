@@ -53,7 +53,7 @@ submissions = [
 		"title": "Kaj vse mam na mizi?",
 		"tags": ["zvezke", "cokolado", "racunalnik", "kozarce", "kroznike", "slusalke", "pisala", "domaco nalogo", "drobtine", "umazano zlico", "smeti", "vodko"],
 		"author": "sej bom pospravu",
-		"predmet": "spo",
+		"predmet": "svz",
 		"professor": "untidy geng"
 	},
 ];
@@ -64,10 +64,21 @@ function applyTagFilter(tag) {
 
 function createSubmission(sub, index, arr) {
 
-	img = document.createElement("img");
-	img.src = icon_link;
-	img_div = document.createElement("div");
-	img_div.appendChild(img);
+	//img = document.createElement("img");
+	//img.src = icon_link;
+	//img_div = document.createElement("div");
+	//img_div.appendChild(img);
+
+	icon = document.createElement("i");
+	// icon is an <i> with classes fa and fa-flask (first determines style, second determines icon type)
+	if (!(sub.predmet in predmeti)) sub.predmet = "all";
+	console.log(sub.predmet);
+	icon_classes = predmeti[sub.predmet].icon.split(" ");
+	icon.classList.add(icon_classes[0]);
+	icon.classList.add(icon_classes[1]);
+	icon_div = document.createElement("div");
+	icon_div.classList.add("icon");
+	icon_div.appendChild(icon);
 
 	title = document.createElement("a");
 	title.classList.add("title");
@@ -111,7 +122,7 @@ function createSubmission(sub, index, arr) {
 	submission = document.createElement("div");
 	submission.classList.add("submission");
 	submission.classList.add(sub.predmet);
-	submission.appendChild(img_div);
+	submission.appendChild(icon_div);
 	submission.appendChild(text_div);
 
 	document.getElementById("grid").appendChild(submission);

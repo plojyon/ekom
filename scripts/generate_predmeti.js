@@ -1,102 +1,104 @@
-predmeti = [
-	{
-		"abbr": "all",
+predmeti = {
+	"all": {
 		"name": "Vsi predmeti",
+		"icon": "fas fa-graduation-cap"
 	},
-	{
-		"abbr": "ang",
+	"ang": {
 		"name": "Angleščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "bio",
+	"bio": {
 		"name": "Biologija",
+		"icon": "fa fa-leaf"
 	},
-	{
-		"abbr": "fil",
+	"fil": {
 		"name": "Filozofija",
+		"icon": "far fa-lightbulb"
 	},
-	{
-		"abbr": "fiz",
+	"fiz": {
 		"name": "Fizika",
+		"icon": "fas fa-atom"
 	},
-	{
-		"abbr": "fra",
+	"fra": {
 		"name": "Francoščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "geo",
+	"geo": {
 		"name": "Geografija",
+		"icon": "fa fa-globe"
 	},
-	{
-		"abbr": "gla",
+	"gla": {
 		"name": "Glasba",
+		"icon": "fa fa-music"
 	},
-	{
-		"abbr": "inf",
+	"inf": {
 		"name": "Informatika",
+		"icon": "fa fa-code"
 	},
-	{
-		"abbr": "ita",
+	"ita": {
 		"name": "Italijanščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "kem",
+	"kem": {
 		"name": "Kemija",
+		"icon": "fa fa-flask"
 	},
-	{
-		"abbr": "lum",
+	"lum": {
 		"name": "Likovna umetnost",
+		"icon": "fa fa-paint-brush"
 	},
-	{
-		"abbr": "mat",
+	"mat": {
 		"name": "Matematika",
+		"icon": "fas fa-square-root-alt"
 	},
-	{
-		"abbr": "nem",
+	"nem": {
 		"name": "Nemščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "ped",
+	"ped": {
 		"name": "Pedagogika",
+		"icon": "fas fa-chalkboard-teacher"
 	},
-	{
-		"abbr": "psh",
+	"psh": {
 		"name": "Psihologija",
+		"icon": "fas fa-brain"
 	},
-	{
-		"abbr": "rus",
+	"rus": {
 		"name": "Ruščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "slo",
+	"slo": {
 		"name": "Slovenščina",
+		"icon": "fas fa-book"
 	},
-	{
-		"abbr": "soc",
+	"soc": {
 		"name": "Sociologija",
+		"icon": "fas fa-user-friends"
 	},
-	{
-		"abbr": "spa",
+	"spa": {
 		"name": "Španščina",
+		"icon": "fa fa-language"
 	},
-	{
-		"abbr": "svz",
+	"svz": {
 		"name": "Športna vzgoja",
+		"icon": "fa fa-futbol"
 	},
-	{
-		"abbr": "uzg",
+	"uzg": {
 		"name": "Umetnostna zgodovina",
+		"icon": "fa fa-landmark"
 	},
-	{
-		"abbr": "zgo",
+	"zgo": {
 		"name": "Zgodovina",
+		"icon": "fas fa-history"
 	}
-];
+};
 
-function addPredmet(sub, index, arr) {
+
+
+function addPredmet(abbr) {
 	opt = document.createElement("option");
-	opt.value = sub.abbr;
-	opt.innerText = sub.name;
+	opt.value = abbr;
+	opt.innerText = predmeti[abbr].name;
 
 	document.getElementById("predmet_select").appendChild(opt);
 }
