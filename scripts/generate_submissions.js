@@ -58,9 +58,6 @@ submissions = [
 	},
 ];
 
-function applyTagFilter(tag) {
-	console.log(tag);
-}
 
 function createSubmission(sub, index, arr) {
 
@@ -72,7 +69,6 @@ function createSubmission(sub, index, arr) {
 	icon = document.createElement("i");
 	// icon is an <i> with classes fa and fa-flask (first determines style, second determines icon type)
 	if (!(sub.predmet in predmeti)) sub.predmet = "all";
-	console.log(sub.predmet);
 	icon_classes = predmeti[sub.predmet].icon.split(" ");
 	icon.classList.add(icon_classes[0]);
 	icon.classList.add(icon_classes[1]);

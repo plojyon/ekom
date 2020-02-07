@@ -1,3 +1,11 @@
+function addPredmet(abbr) {
+	opt = document.createElement("option");
+	opt.value = abbr;
+	opt.innerText = predmeti[abbr].name;
+
+	document.getElementById("predmet_select").appendChild(opt);
+}
+
 predmeti = {
 	"all": {
 		"name": "Vsi predmeti",
@@ -92,13 +100,3 @@ predmeti = {
 		"icon": "fas fa-history"
 	}
 };
-
-
-
-function addPredmet(abbr) {
-	opt = document.createElement("option");
-	opt.value = abbr;
-	opt.innerText = predmeti[abbr].name;
-
-	document.getElementById("predmet_select").appendChild(opt);
-}
