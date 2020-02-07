@@ -17,6 +17,7 @@ eKomunizem
  - [ ] label pod ikonce
  - [ ] barva ikonc
 
+<!--
  =============
  Ikone v rabi:
  =============
@@ -28,20 +29,21 @@ eKomunizem
  Glasba (nota)				<i class="fa fa-music"></i>
  Informatika (racunalnik)	<i class="fa fa-code"></i>
  Kemija (erlenmajerica)		<i class="fa fa-flask"></i>
- Likovna (copic)				<i class="fa fa-paint-brush"></i>
+ Likovna (copic)			<i class="fa fa-paint-brush"></i>
  Matematika (koren x)		<i class="fas fa-square-root-alt"></i>
  Pedagogika (ucitelj)		<i class="fas fa-chalkboard-teacher"></i>
- Psihologija	(mozgani)		<i class="fas fa-brain"></i>
- Slovenscina	(knjiga)		<i class="fas fa-book"></i>
- Sociologija	(2 clovecka)	<i class="fas fa-user-friends"></i>
+ Psihologija (mozgani)		<i class="fas fa-brain"></i>
+ Slovenscina (knjiga)		<i class="fas fa-book"></i>
+ Sociologija (2 clovecka)	<i class="fas fa-user-friends"></i>
  Sportna (zoga)				<i class="fa fa-futbol"></i>
- Umetnostna zgo (stavba)		<i class="fa fa-landmark"></i>
+ Umetnostna zgo (stavba)	<i class="fa fa-landmark"></i>
  Zgodovina (slavolok) 		<i class="fas fa-history"></i>
- Neznan predmet (graduation) <i class="fas fa-graduation-cap"></i>
+ Neznan predmet (graduation)<i class="fas fa-graduation-cap"></i>
  Tutorstvo (graduation cap)	<i class="fas fa-graduation-cap"></i>
  Objava zapiskov (knjiga)	<i class="fa fa-book"></i>
- Ledina website (stavba)		<i class="fa fa-school"></i>
+ Ledina website (stavba)	<i class="fa fa-school"></i>
 
  Avtor in profesor:
- avtor <i class="fas fa-pencil-alt"></i>
- profesor <i class="fas fa-chalkboard-teacher"></i>
+ avtor						<i class="fas fa-pencil-alt"></i>
+ profesor					<i class="fas fa-chalkboard-teacher"></i>
+ -->
