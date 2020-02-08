@@ -2,7 +2,7 @@
 	display: flex;
 	border: 1px solid black;
 	border-radius: 3px;
-	padding: 10px;
+	padding: 20px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 	margin: 0 auto;
 	margin-bottom: 1em;
@@ -14,7 +14,7 @@
 }
 .submission_text {
 	flex: 1;
-	margin-left: 10px;
+	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -118,17 +118,18 @@ nav a:hover {
 	font-size: 5em;
 	border-style: dotted;
 	border-width: 3px;
-	border-color: rgba(0,0,0,0.5);
-	margin: 10px;
+	border-color: rgba(0,0,0,0.7);
 	padding: 10px;
 	width: 1.2em;
 	text-align: center;
 }
-#subject_name {
-	display: flex;
-	justify-content: center;
+.subject_name {
+	text-align: center;
 	font-size: 0.9em;
+	position: relative;
+	top: 7px;
+	color: rgba(0,0,0,0.7);
 }
-#spacer {
- flex: 1;
+.spacer {
+	flex: 1;
 }
