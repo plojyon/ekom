@@ -25,9 +25,6 @@
 p {
 	margin: 2px;
 }
-p.author, p.professor {
-	color: rgba(0,0,0,.7);
-}
 .tags {
 	margin: 0.3em 0;
 }
@@ -130,6 +127,17 @@ nav a:hover {
 	top: 7px;
 	color: rgba(0,0,0,0.7);
 }
-.spacer {
+#submission_info {
 	flex: 1;
+  color: rgba(0,0,0,.7);
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+#submission_info a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7)
+}
+#submission_info a:hover {
+	text-decoration: underline;
 }
