@@ -76,6 +76,15 @@ function createSubmission(sub, index, arr) {
 	icon_div.classList.add("subject_icon");
 	icon_div.appendChild(icon);
 
+	icon_label = document.createElement("p");
+	icon_label.innerText = predmeti[sub.predmet].name;
+	icon_label.classList.add("subject_name");
+
+	subject_indicator = document.createElement("div");
+	subject_indicator.appendChild(icon_div);
+	subject_indicator.appendChild(icon_label);
+
+
 	title = document.createElement("a");
 	title.classList.add("submission_title");
 	title.href = "http://google.com";
@@ -91,6 +100,9 @@ function createSubmission(sub, index, arr) {
 		tags.appendChild(t);
 		tags.appendChild(document.createTextNode(" "));
 	}
+
+	spacer = document.createElement("div");
+	spacer.classList.add("spacer");
 
 	prof_icon = document.createElement("i");
 	prof_icon.classList.add("fas");
@@ -108,17 +120,22 @@ function createSubmission(sub, index, arr) {
 	author.appendChild(auth_icon);
 	author.appendChild(document.createTextNode(" "+sub.author));
 
+	submission_info = document.createElement("div");
+	submission_info.classList.add("submission_info");
+	submission_info.appendChild(professor);
+	submission_info.appendChild(author);
+
 	text_div = document.createElement("div");
 	text_div.classList.add("submission_text");
 	text_div.appendChild(title);
 	text_div.appendChild(tags);
-	text_div.appendChild(professor);
-	text_div.appendChild(author);
+	text_div.appendChild(spacer);
+	text_div.appendChild(submission_info);
 
 	submission = document.createElement("div");
 	submission.classList.add("submission");
 	submission.classList.add(sub.predmet);
-	submission.appendChild(icon_div);
+	submission.appendChild(subject_indicator);
 	submission.appendChild(text_div);
 
 	document.getElementById("submissions_list").appendChild(submission);

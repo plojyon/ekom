@@ -127,9 +127,12 @@ nav a:hover {
 	top: 7px;
 	color: rgba(0,0,0,0.7);
 }
-#submission_info {
+.spacer {
 	flex: 1;
-  color: rgba(0,0,0,.7);
+}
+.submission_info {
+	flex: 1;
+	color: rgba(0,0,0,.7);
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
