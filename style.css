@@ -133,14 +133,23 @@ nav a:hover {
 .submission_info {
 	flex: 1;
 	color: rgba(0,0,0,.7);
+}
+p.author, p.professor {
+	align-items: baseline;
+}
+.submission_info a {
+	float: right;
+	background-color: rgba(0,0,0,0.3);
+	border-style: dotted;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.3);
+	height: auto;
+	width: auto;
 	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-}
-#submission_info a {
+	justify-content: center;
+	color: rgba(0,0,0,0.7);
 	text-decoration: none;
-	color: rgba(0,0,0,0.7)
 }
-#submission_info a:hover {
+.submission_info a:hover {
 	text-decoration: underline;
 }
