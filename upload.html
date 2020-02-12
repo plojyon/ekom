@@ -13,7 +13,7 @@
 		</a>
 		<nav>
 			<a href="https://tutorstvo.ledina.si/"><i class="fas fa-graduation-cap"></i>&nbsp;Tutorstvo na Gimnaziji Ledina</a>
-			<a href="https://google.com"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Seznam objavljenih zapiskov</a>
+			<a href="index.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Seznam objavljenih zapiskov</a>
 			<a href="https://www.ledina.si/"><i class="fas fa-school"></i>&nbsp;Spletna stran Gimnazije Ledina</a>
 		</nav>
 	</div>
@@ -24,169 +24,171 @@
   </div>
 	<div id="upload_main">
     <div id="submission_upload">
+			<div id="filter_div">
       <div id="upload_main_title">
-        <h3>Vnesite svoje podateke<h3>
+        <h3>Vnesite svoje podatke<h3>
       </div>
-  		<div class="filters">
-  			<section>
-  				<p>Letnik:</p>
-  				<select id="letnik_select">
-  					<option value="1">1. Letnik</option>
-  					<option value="2">2. Letnik</option>
-  					<option value="3">3. Letnik</option>
-  					<option value="4">4. Letnik</option>
-  				</select>
-		  	</section>
-      </div>
-      <div class="filters">
-  			<section>
-  				<p>Verified:</p>
-  				<input type="checkbox" id="verified_checkbox">
-  			</section>
-      </div>
-      <div class="filters">
-  			<section>
-  				<p>Predmet:<p>
-  				<select id="predmet_select">
-  				  <option>Angleščina</option>
-            <option>Biologija</option>
-            <option>Filozofija</option>
-            <option>Fizika</option>
-            <option>Francoščina</option>
-            <option>Geografija</option>
-            <option>Glasba</option>
-            <option>Informatika</option>
-            <option>Italijanščina</option>
-            <option>Kemija</option>
-            <option>Likovna umetnost</option>
-            <option>Matematika</option>
-            <option>Nemščina</option>
-            <option>Pedagogika</option>
-            <option>Psihologija</option>
-            <option>Ruščina</option>
-            <option>Slovenščina</option>
-            <option>Sociologija</option>
-            <option>Španščina</option>
-            <option>Športna vzgoja</option>
-            <option>Umetnostna zgodovina</option>
-            <option>Zgodovina</option>
-  				</select>
-  			</section>
-      </div>
-      <div class="filters">
-			  <section>
-				  <p>Profesor:</p>
-			  	<select id="professor_select">
-  					<optgroup label="Angleščina">
-  						<option>Matejka Kuhar</option>
-  						<option>Maja Lebar Bajec</option>
-  						<option>Ana Likar</option>
-  						<option>Helena Osterman</option>
-  						<option>Irena Škulj</option>
-  						<option>Ksenija Terglav Jakopin</option>
-  						<option>Sandra Uranič</option>
-  					</optgroup>
-  					<optgroup label="Biologija">
-  						<option>Veronika Babič</option>
-  						<option>Sonja Kačar</option>
-  						<option>Ina Kretič</option>
-  					</optgroup>
-  					<optgroup label="Filozofija">
-  						<option>Gorazd Jurman</option>
-  					</optgroup>
-  					<optgroup label="Fizika">
-  						<option>Ruben Belina</option>
-  						<option>Aleš Iršič</option>
-  						<option>Natalija Novak</option>
-  						<option>Nataša Ranđelović</option>
-  					</optgroup>
-  					<optgroup label="Francoščina">
-  						<option>Neža Umek Podgornik</option>
-  					</optgroup>
-  					<optgroup label="Geografija">
-  						<option>Tatjana Ferder Brunšek</option>
-  						<option>Ingrid Florjanc</option>
-  						<option>Lea Nemec</option>
-  					</optgroup>
-  					<optgroup label="Glasba">
-  						<option>Marjeta Kozmus</option>
-  					</optgroup>
-  					<optgroup label="Informatika">
-  						<option>Betka Burger</option>
-  						<option>Žan Ternik</option>
-  					</optgroup>
-  					<optgroup label="Italijanščina">
-  						<option>Klara Antoni Jančič</option>
-  					</optgroup>
-  					<optgroup label="Kemija">
-  						<option>Nika Cebin</option>
-  						<option>Darko Košič</option>
-  						<option>Špela Tršek</option>
-  					</optgroup>
-  					<optgroup label="Likovna umetnost">
-  						<option>Mihaela Gregorc</option>
-  					</optgroup>
-  					<optgroup label="Matematika">
-  						<option>Uroš Cotman</option>
-  						<option>Maruša Dobljekar</option>
-  						<option>Tatjana Levstek</option>
-  						<option>Tamara Možina Artač</option>
-  						<option>Rok Škufca</option>
-  					</optgroup>
-  					<optgroup label="Nemščina">
-  						<option>Nadja Gliha Olenik</option>
-  						<option>Matejka Kuhar</option>
-  						<option>Matejka Kuhar</option>
-  						<option>Helena Osterman</option>
-  						<option>Alenka Vojsk</option>
-  					</optgroup>
-  					<optgroup label="Pedagogika">
-  						<option>Nina Levstik</option>
-  					</optgroup>
-  					<optgroup label="Psihologija">
-  						<option>Peter Prhavc</option>
-  						<option>Lidija Srša</option>
-  					</optgroup>
-  					<optgroup label="Ruščina">
-  						<option>Bojana Petrin</option>
-  					</optgroup>
-  					<optgroup label="Slovenščina">
-  						<option>Irena Ceklin Bačar</option>
-  						<option>Tatjana Cvetko</option>
-  						<option>Nina Levstik</option>
-  						<option>Andreja Pavle Jurman</option>
-  						<option>Bojana Petrin</option>
-  						<option>Nina Prešern</option>
-  						<option>Petra Špiletič Latin</option>
-  					</optgroup>
-  					<optgroup label="Sociologija">
-  						<option>Erika Berlan</option>
-  					</optgroup>
-  					<optgroup label="Španščina">
-  						<option>Tomaž Šmid</option>
-  					</optgroup>
-  					<optgroup label="Športna vzgoja">
-  						<option>Bojana Bizjan</option>
-  						<option>Tomaž Karče</option>
-  						<option>Miha Kobe</option>
-  						<option>Nataša Korošec</option>
-  						<option>Nataša Korošec</option>
-  						<option>Urša Šilc Trček</option>
-  						<option>Blanka Tomac</option>
-  					</optgroup>
-  					<optgroup label="Umetnostna zgodovina">
-  						<option>Boris Bovha</option>
-  					</optgroup>
-  					<optgroup label="Zgodovina">
-  						<option>Boris Bovha</option>
-  						<option>Arjana Marinič</option>
-  						<option>Lea Nemec</option>
-  						<option>Boris Pavliha</option>
-  						<option>Roman Vogrinc</option>
-  					</optgroup>
-  				</select>
-  			</section>
-    </div>
+	  		<div class="filters">
+	  			<section>
+	  				<p>Letnik:</p>
+	  				<select id="letnik_select">
+	  					<option value="1">1. Letnik</option>
+	  					<option value="2">2. Letnik</option>
+	  					<option value="3">3. Letnik</option>
+	  					<option value="4">4. Letnik</option>
+	  				</select>
+			  	</section>
+	      </div>
+	      <div class="filters">
+	  			<section>
+	  				<p>Verified:</p>
+	  				<input type="checkbox" id="verified_checkbox">
+	  			</section>
+	      </div>
+	      <div class="filters">
+	  			<section>
+	  				<p>Predmet:<p>
+	  				<select id="predmet_select">
+	  				  <option>Angleščina</option>
+	            <option>Biologija</option>
+	            <option>Filozofija</option>
+	            <option>Fizika</option>
+	            <option>Francoščina</option>
+	            <option>Geografija</option>
+	            <option>Glasba</option>
+	            <option>Informatika</option>
+	            <option>Italijanščina</option>
+	            <option>Kemija</option>
+	            <option>Likovna umetnost</option>
+	            <option>Matematika</option>
+	            <option>Nemščina</option>
+	            <option>Pedagogika</option>
+	            <option>Psihologija</option>
+	            <option>Ruščina</option>
+	            <option>Slovenščina</option>
+	            <option>Sociologija</option>
+	            <option>Španščina</option>
+	            <option>Športna vzgoja</option>
+	            <option>Umetnostna zgodovina</option>
+	            <option>Zgodovina</option>
+	  				</select>
+	  			</section>
+	      </div>
+	      <div class="filters">
+				  <section>
+					  <p>Profesor:</p>
+				  	<select id="professor_select">
+	  					<optgroup label="Angleščina">
+	  						<option>Matejka Kuhar</option>
+	  						<option>Maja Lebar Bajec</option>
+	  						<option>Ana Likar</option>
+	  						<option>Helena Osterman</option>
+	  						<option>Irena Škulj</option>
+	  						<option>Ksenija Terglav Jakopin</option>
+	  						<option>Sandra Uranič</option>
+	  					</optgroup>
+	  					<optgroup label="Biologija">
+	  						<option>Veronika Babič</option>
+	  						<option>Sonja Kačar</option>
+	  						<option>Ina Kretič</option>
+	  					</optgroup>
+	  					<optgroup label="Filozofija">
+	  						<option>Gorazd Jurman</option>
+	  					</optgroup>
+	  					<optgroup label="Fizika">
+	  						<option>Ruben Belina</option>
+	  						<option>Aleš Iršič</option>
+	  						<option>Natalija Novak</option>
+	  						<option>Nataša Ranđelović</option>
+	  					</optgroup>
+	  					<optgroup label="Francoščina">
+	  						<option>Neža Umek Podgornik</option>
+	  					</optgroup>
+	  					<optgroup label="Geografija">
+	  						<option>Tatjana Ferder Brunšek</option>
+	  						<option>Ingrid Florjanc</option>
+	  						<option>Lea Nemec</option>
+	  					</optgroup>
+	  					<optgroup label="Glasba">
+	  						<option>Marjeta Kozmus</option>
+	  					</optgroup>
+	  					<optgroup label="Informatika">
+	  						<option>Betka Burger</option>
+	  						<option>Žan Ternik</option>
+	  					</optgroup>
+	  					<optgroup label="Italijanščina">
+	  						<option>Klara Antoni Jančič</option>
+	  					</optgroup>
+	  					<optgroup label="Kemija">
+	  						<option>Nika Cebin</option>
+	  						<option>Darko Košič</option>
+	  						<option>Špela Tršek</option>
+	  					</optgroup>
+	  					<optgroup label="Likovna umetnost">
+	  						<option>Mihaela Gregorc</option>
+	  					</optgroup>
+	  					<optgroup label="Matematika">
+	  						<option>Uroš Cotman</option>
+	  						<option>Maruša Dobljekar</option>
+	  						<option>Tatjana Levstek</option>
+	  						<option>Tamara Možina Artač</option>
+	  						<option>Rok Škufca</option>
+	  					</optgroup>
+	  					<optgroup label="Nemščina">
+	  						<option>Nadja Gliha Olenik</option>
+	  						<option>Matejka Kuhar</option>
+	  						<option>Matejka Kuhar</option>
+	  						<option>Helena Osterman</option>
+	  						<option>Alenka Vojsk</option>
+	  					</optgroup>
+	  					<optgroup label="Pedagogika">
+	  						<option>Nina Levstik</option>
+	  					</optgroup>
+	  					<optgroup label="Psihologija">
+	  						<option>Peter Prhavc</option>
+	  						<option>Lidija Srša</option>
+	  					</optgroup>
+	  					<optgroup label="Ruščina">
+	  						<option>Bojana Petrin</option>
+	  					</optgroup>
+	  					<optgroup label="Slovenščina">
+	  						<option>Irena Ceklin Bačar</option>
+	  						<option>Tatjana Cvetko</option>
+	  						<option>Nina Levstik</option>
+	  						<option>Andreja Pavle Jurman</option>
+	  						<option>Bojana Petrin</option>
+	  						<option>Nina Prešern</option>
+	  						<option>Petra Špiletič Latin</option>
+	  					</optgroup>
+	  					<optgroup label="Sociologija">
+	  						<option>Erika Berlan</option>
+	  					</optgroup>
+	  					<optgroup label="Španščina">
+	  						<option>Tomaž Šmid</option>
+	  					</optgroup>
+	  					<optgroup label="Športna vzgoja">
+	  						<option>Bojana Bizjan</option>
+	  						<option>Tomaž Karče</option>
+	  						<option>Miha Kobe</option>
+	  						<option>Nataša Korošec</option>
+	  						<option>Nataša Korošec</option>
+	  						<option>Urša Šilc Trček</option>
+	  						<option>Blanka Tomac</option>
+	  					</optgroup>
+	  					<optgroup label="Umetnostna zgodovina">
+	  						<option>Boris Bovha</option>
+	  					</optgroup>
+	  					<optgroup label="Zgodovina">
+	  						<option>Boris Bovha</option>
+	  						<option>Arjana Marinič</option>
+	  						<option>Lea Nemec</option>
+	  						<option>Boris Pavliha</option>
+	  						<option>Roman Vogrinc</option>
+	  					</optgroup>
+	  				</select>
+	  			</section>
+	    </div>
+	</div>
 		</aside>
 	</main>
 </html>
