@@ -159,7 +159,6 @@ p.author, p.professor {
 	justify-content: center;
 }
 #submission_upload {
-	flex: 0.8;
 	display: flex;
 	justify-content: center;
 	margin: 10px;
@@ -172,6 +171,11 @@ p.author, p.professor {
 	flex-direction: column;
 }
 .filters {
+	max-width: 250px;
+	margin: 10px;
+}
+.input {
+	margin: 10px;
 	max-width: 250px;
 }
 #upload_title_element {
