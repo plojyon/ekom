@@ -24,10 +24,10 @@
 	</div>
 	<div id="upload_main">
 		<div id="submission_upload">
-			<div id="filter_div">
-			<div id="upload_main_title">
-				<h3>Vnesite svoje podatke</h3>
-			</div>
+			<form id="filter_div">
+				<div id="upload_main_title">
+					<h3>Vnesite svoje podatke</h3>
+				</div>
 				<div class="filters">
 					<section>
 						<p>Letnik:</p>
@@ -188,7 +188,11 @@
 						</select>
 					</section>
 				</div>
-			</div>
+				<label for="upload_sname">Izberite naslov datoteke</label>
+				<input tyle="file" id="upload_name" name="upload_name"></input><br>
+				<label for="upload_file">Izberite datoteko</label>
+				<input type="file" id="upload_file" name="upload_file"></input>
+			</form>
 		</aside>
 	</main>
 </html>
