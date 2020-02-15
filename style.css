@@ -1,4 +1,4 @@
-.submission {
+.submission, #submission_upload {
 	display: flex;
 	border: 1px solid black;
 	border-radius: 3px;
@@ -69,11 +69,14 @@ main {
 	padding-bottom: 3em;
 	margin-left: 25px;
 }
+#upload_filters {
+	display: flex;
+	height: 10%;
+}
 aside {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 20px;
-	height: 100%;
 	border: dashed;
 	margin: 25px;
 	padding: 25px;
@@ -83,6 +86,7 @@ aside {
 	flex-direction: column;
 	background-color: rgba(255,255,255,.8);
 	min-width: 100px;
+	height: 100%;
 }
 aside > * {
 	margin: 10px 0;
@@ -158,21 +162,23 @@ p.author, p.professor {
 	display: flex;
 	justify-content: center;
 }
-#submission_upload {
+/*#submission_upload {
 	display: flex;
-	justify-content: center;
-	margin: 10px;
+	flex-direction: row;
+	margin: 5px;
 	background-color: rgba(255,255,255,0.6);
-	padding: 25px;
+	padding: 10px;
 	border-radius: 25px;
-}
+	border-style: dashed;
+	margin-top: 10px;
+}*/
 #filter_div {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 .filters {
 	max-width: 250px;
-	margin: 10px;
+	margin: 5px;
 }
 .input {
 	margin: 10px;
