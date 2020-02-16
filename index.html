@@ -55,60 +55,31 @@
 					</div>
 				</div>
 			</div>
-			<div id="submission_upload">
-				<form id="filter_div">
-					<div id="upload_main_title">
-						<h3>Obrazec za objavo datoteke</h3>
+		<div class="submission">
+			<div>
+				<div c;ass="subject_icon">
+					<i class="fa fa-upload" aria-hidden="true"></i>
+				</div>
+				<p class="subject_name">Objava datoteke<p>
+			</div>
+			<div class="submission_text">
+				<div id="upload_title">
+					<div class="input">
+						<label for="upload_sname">Poimenujte datoteko</label>
+						<input tyle="file" id="upload_name" name="upload_name"></input>
 					</div>
-					<div class="filters">
-						<section>
-							<p>Letnik:</p>
-							<select id="letnik_select">
-								<option value="1">1. Letnik</option>
-								<option value="2">2. Letnik</option>
-								<option value="3">3. Letnik</option>
-								<option value="4">4. Letnik</option>
-							</select>
-						</section>
-					</div>
-					<div class="filters">
-						<section>
-							<p>Verified:</p>
-							<input type="checkbox" id="verified_checkbox">
-						</section>
-					</div>
-					<div class="filters">
-						<section>
-							<p>Predmet:<p>
-								<select id="predmet_select">
-									<option>Angleščina</option>
-									<option>Biologija</option>
-									<option>Filozofija</option>
-									<option>Fizika</option>
-									<option>Francoščina</option>
-									<option>Geografija</option>
-									<option>Glasba</option>
-									<option>Informatika</option>
-									<option>Italijanščina</option>
-									<option>Kemija</option>
-									<option>Likovna umetnost</option>
-									<option>Matematika</option>
-									<option>Nemščina</option>
-									<option>Pedagogika</option>
-									<option>Psihologija</option>
-									<option>Ruščina</option>
-									<option>Slovenščina</option>
-									<option>Sociologija</option>
-									<option>Španščina</option>
-									<option>Športna vzgoja</option>
-									<option>Umetnostna zgodovina</option>
-									<option>Zgodovina</option>
-								</select>
-							</section>
-						</div>
-				<div class="filters">
+				</div>
+				<div id="file_contents">
+					<p>Snon:<p>&nbsp;
+					<input type="checkbox" id="snov_checkbox">
+					<p>Test:<p>&nbsp;
+					<input type="checkbox" id="test_checkbox">
+					<p>Vaje:<p>&nbsp;
+					<input type="checkbox" id="vaje_checkbox">
+				</div>
+				<div id="upload_professor">
 					<section>
-						<p>Profesor:</p>
+						<p>Profesor:<p>
 						<select id="professor_select">
 							<optgroup label="Angleščina">
 								<option>Matejka Kuhar</option>
@@ -220,19 +191,39 @@
 						</select>
 					</section>
 				</div>
-				<div class="input">
-					<label for="upload_sname">Poimenujte datoteko</label>
-					<input tyle="file" id="upload_name" name="upload_name"></input>
+				<div id="upload_subject">
+					<section>
+						<p>Predmet:<p>
+						<select id="predmet_select">
+							<option>Angleščina</option>
+							<option>Biologija</option>
+							<option>Filozofija</option>
+							<option>Fizika</option>
+							<option>Francoščina</option>
+							<option>Geografija</option>
+							<option>Glasba</option>
+							<option>Informatika</option>
+							<option>Italijanščina</option>
+							<option>Kemija</option>
+							<option>Likovna umetnost</option>
+							<option>Matematika</option>
+							<option>Nemščina</option>
+							<option>Pedagogika</option>
+							<option>Psihologija</option>
+							<option>Ruščina</option>
+							<option>Slovenščina</option>
+							<option>Sociologija</option>
+							<option>Španščina</option>
+							<option>Športna vzgoja</option>
+							<option>Umetnostna zgodovina</option>
+							<option>Zgodovina</option>
+						</select>
+					</section>
 				</div>
-				<div class="input">
-					<label for="upload_file">Izberite datoteko</label>
-					<input type="file" id="upload_file" name="upload_file"></input>
+				<div id="upload_author">
+					<p>Vnesite svoje ime/nickname<p>
+					<input type="text" name="author_name" id="author_name">
 				</div>
-				<div id="submit">
-					<input type="submit" value="Submit">
-				</div>
-				</form>
-			</div>
 		</article>
 		<aside id="filters">
 			<h1>Filtri</h1>
