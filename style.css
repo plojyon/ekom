@@ -124,7 +124,7 @@ nav a:hover {
 	width: 1.2em;
 	text-align: center;
 }
-.subject_name {
+.subject_name, #upload_subject {
 	text-align: center;
 	font-size: 0.9em;
 	position: relative;
@@ -166,8 +166,11 @@ p.author, p.professor {
 	 display: flex;
 	 flex-direction: row;
  }
- #upload_professor, #upload_subject, #upload_author {
+ #upload_professor, #upload_author {
 	 max-width: 250px;
+	 display: flex;
+	 flex-direction: column;
+	 margin: 5px;
  }
  #upload_form {
 	 display: flex;
@@ -176,7 +179,10 @@ p.author, p.professor {
  #file-select-and-upload {
 	 float: right;
 	 position: relative;
-	 top: 110px;
+	 top: 75px;
 	 display: flex;
 	 justify-content: center;
  }
+#predmet_select {
+	max-width: 100px;
+}
