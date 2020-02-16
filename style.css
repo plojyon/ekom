@@ -158,3 +158,25 @@ p.author, p.professor {
 	text-decoration: underline;
 }
 /* End of index.html style. Start of upload.html */
+ #upload_title {
+	 font-size: 1.3em;
+	 font-weight: bold;
+ }
+ #upload_contents {
+	 display: flex;
+	 flex-direction: row;
+ }
+ #upload_professor, #upload_subject, #upload_author {
+	 max-width: 250px;
+ }
+ #upload_form {
+	 display: flex;
+	 justify-content: space-between;
+ }
+ #file-select-and-upload {
+	 float: right;
+	 position: relative;
+	 top: 110px;
+	 display: flex;
+	 justify-content: center;
+ }
