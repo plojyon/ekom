@@ -16,7 +16,8 @@ eKomunizem
  - [x] ikonce se pred avtor & prof
  - [ ] label pod ikonce
  - [ ] barva ikonc
-
+ - [ ] filtri grejo v details
+ - [ ] login obrazec
 <!--
  =============
  Ikone v rabi:
