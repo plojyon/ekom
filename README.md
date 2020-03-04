@@ -43,7 +43,9 @@ eKomunizem
  Tutorstvo (graduation cap)	<i class="fas fa-graduation-cap"></i>
  Objava zapiskov (knjiga)	<i class="fa fa-book"></i>
  Ledina website (stavba)	<i class="fa fa-school"></i>
- Download (floppy)        <i class="fas fa-save"></i>
+ Download (floppy)          <i class="fas fa-save"></i>
+ Upload (arrow)             <i class="fa fa-upload" aria-hidden="true"></i>
+
 
  Avtor in profesor:
  avtor						<i class="fas fa-pencil-alt"></i>
