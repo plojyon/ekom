@@ -3,9 +3,9 @@
 
 	if (isset($_GET["verified"])) {
 		if ($_GET["verified"] == "1") {
-			$ukaz = "SELECT name, verified WHERE verified == True";
+			$ukaz = "SELECT name, verified FROM authors WHERE verified == True";
 		} else {
-			$ukaz = "SELECT name, verified WHERE verified == False"
+			$ukaz = "SELECT name, verified FROM authors WHERE verified == False"
 		}
 	} else {
 		$ukaz = "SELECT name, verified FROM authors";
