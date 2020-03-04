@@ -4,69 +4,89 @@ submissions = [
 		"title": "Deutsche grammatik oder wendische Sprache",
 		"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
 		"author": "yon.je.ploj",
+		"predmet": "nem",
 		"professor": "Prof. Vojsk"
 	},
 	{
 		"title": "Kuharske bukve",
 		"tags": ["kuharski vuk", "bukve", "hrana"],
 		"author": "vodnik.valentin",
+		"predmet": "psh",
 		"professor": "Prof. Ceklin"
 	},
 	{
 		"title": "Programiranje z Javo ali Zakaj so moje ocene slabe",
 		"tags": ["Ta nesrecni dan", "Maticek se zeni", "C/C++"],
 		"author": "spontana geneza datoteke",
+		"predmet": "inf",
 		"professor": "Prof. Burger"
 	},
 	{
 		"title": "Kemija v 1. letniku",
 		"tags": ["Kisline, baze in soli", "Poimenovanje", "Periodni sistem"],
 		"author": "masa.kovac",
+		"predmet": "kem",
 		"professor": "Prof. Cebin"
 	},
 	{
 		"title": "Moj zvezk",
 		"tags": [],
 		"author": "yon.ploj",
+		"predmet": "ped",
 		"professor": "Prof. Levstek"
 	},
 	{
 		"title": "Tvoj zvezk",
 		"tags": ["lep in urejen"],
 		"author": "yon.ploj",
+		"predmet": "mat",
 		"professor": "Prof. Levstek"
 	},
 	{
 		"title": "Recept za palacinke",
 		"tags": ["moka", "jajca", "mleko", "sladkor", "nutella"],
 		"author": "namazes z Nutello",
+		"predmet": "mat",
 		"professor": "speces u ponvi"
 	},
 	{
 		"title": "Kaj vse mam na mizi?",
 		"tags": ["zvezke", "cokolado", "racunalnik", "kozarce", "kroznike", "slusalke", "pisala", "domaco nalogo", "drobtine", "umazano zlico", "smeti", "vodko"],
 		"author": "sej bom pospravu",
+		"predmet": "svz",
 		"professor": "untidy geng"
 	},
 ];
 
-window.onload = function() {
-	submissions.forEach(createSubmission);
-}
-
-function applyTagFilter(tag) {
-	console.log(tag);
-}
 
 function createSubmission(sub, index, arr) {
 
-	img = document.createElement("img");
-	img.src = icon_link;
-	img_div = document.createElement("div");
-	img_div.appendChild(img);
+	//img = document.createElement("img");
+	//img.src = icon_link;
+	//img_div = document.createElement("div");
+	//img_div.appendChild(img);
+
+	icon = document.createElement("i");
+	// icon is an <i> with classes fa and fa-flask (first determines style, second determines icon type)
+	if (!(sub.predmet in predmeti)) sub.predmet = "all";
+	icon_classes = predmeti[sub.predmet].icon.split(" ");
+	icon.classList.add(icon_classes[0]);
+	icon.classList.add(icon_classes[1]);
+	icon_div = document.createElement("div");
+	icon_div.classList.add("subject_icon");
+	icon_div.appendChild(icon);
+
+	icon_label = document.createElement("p");
+	icon_label.innerText = predmeti[sub.predmet].name;
+	icon_label.classList.add("subject_name");
+
+	subject_indicator = document.createElement("div");
+	subject_indicator.appendChild(icon_div);
+	subject_indicator.appendChild(icon_label);
+
 
 	title = document.createElement("a");
-	title.classList.add("title");
+	title.classList.add("submission_title");
 	title.href = "http://google.com";
 	title.innerText = sub.title;
 
@@ -80,6 +100,9 @@ function createSubmission(sub, index, arr) {
 		tags.appendChild(t);
 		tags.appendChild(document.createTextNode(" "));
 	}
+
+	spacer = document.createElement("div");
+	spacer.classList.add("spacer");
 
 	prof_icon = document.createElement("i");
 	prof_icon.classList.add("fas");
@@ -97,17 +120,23 @@ function createSubmission(sub, index, arr) {
 	author.appendChild(auth_icon);
 	author.appendChild(document.createTextNode(" "+sub.author));
 
+	submission_info = document.createElement("div");
+	submission_info.classList.add("submission_info");
+	submission_info.appendChild(professor);
+	submission_info.appendChild(author);
+
 	text_div = document.createElement("div");
-	text_div.classList.add("text");
+	text_div.classList.add("submission_text");
 	text_div.appendChild(title);
 	text_div.appendChild(tags);
-	text_div.appendChild(professor);
-	text_div.appendChild(author);
+	text_div.appendChild(spacer);
+	text_div.appendChild(submission_info);
 
 	submission = document.createElement("div");
 	submission.classList.add("submission");
-	submission.appendChild(img_div);
+	submission.classList.add(sub.predmet);
+	submission.appendChild(subject_indicator);
 	submission.appendChild(text_div);
 
-	document.getElementById("grid").appendChild(submission);
+	document.getElementById("submissions_list").appendChild(submission);
 }

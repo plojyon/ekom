@@ -1,36 +1,35 @@
-.submission {
+.submission, #submission_upload {
 	display: flex;
 	border: 1px solid black;
 	border-radius: 3px;
-	padding: 10px;
+	padding: 20px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 	margin: 0 auto;
 	margin-bottom: 1em;
 	background-color: rgba(255,255,255,0.8);
-	width: 85%;
+	width: 95%;
 }
 .submission img {
 	width: 100px;
 }
-.text {
+.submission_text {
 	flex: 1;
-	margin-left: 10px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
 }
-.title {
+.submission_title {
 	font-size: 1.3em;
 	font-weight: bold;
 }
 p {
 	margin: 2px;
 }
-p.author, p.professor {
-	color: rgba(0,0,0,.7);
-}
 .tags {
 	margin: 0.3em 0;
 }
 .tag {
-	background-color: lightgray;
+	background-color: darkgray;
 	padding: 0.1em 0.4em;
 	border-radius: 5px;
 	font-size: 0.9em;
@@ -43,7 +42,7 @@ body {
 	margin: 0;
 	background-image: url("backgrounds/kemija.jpg");
 	background-attachment: fixed;
-    background-position: center top;
+  background-position: center top;
 	background-size: cover;
 }
 #banner	{
@@ -51,33 +50,33 @@ body {
 	justify-content: space-between;
 	height: 160px;
 	background-color: rgba(0,0,0,.5);
-}
-#naslov {
-	color: white;
+	background: linear-gradient(to right, white, white, rgba(0,0,0,.5), rgba(0,0,0,.5))
 }
 #header {
 	color: black;
 	font: Helvetica;
 }
-a.title {
+a.submission_title {
 	text-decoration: none;
 	color: black;
 }
 main {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 }
-#grid {
+#submissions_list {
 	margin-top: 1em;
 	padding-bottom: 3em;
+	margin-left: 25px;
+}
+#upload_filters {
+	display: flex;
+	height: 10%;
 }
 aside {
-	width: 10%;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 20px;
-	height: 100%;
 	border: dashed;
 	margin: 25px;
 	padding: 25px;
@@ -85,6 +84,9 @@ aside {
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
+	background-color: rgba(255,255,255,.8);
+	min-width: 100px;
+	height: 100%;
 }
 aside > * {
 	margin: 10px 0;
@@ -107,4 +109,80 @@ nav a {
 }
 nav a:hover {
 	text-decoration: underline;
+}
+#noresult {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+.subject_icon {
+	font-size: 5em;
+	border-style: dotted;
+	border-width: 3px;
+	border-color: rgba(0,0,0,0.7);
+	padding: 10px;
+	width: 1.2em;
+	text-align: center;
+}
+.subject_name, #upload_subject {
+	text-align: center;
+	font-size: 0.9em;
+	position: relative;
+	top: 7px;
+	color: rgba(0,0,0,0.7);
+}
+.spacer {
+	flex: 1;
+}
+.submission_info {
+	flex: 1;
+	color: rgba(0,0,0,.7);
+}
+p.author, p.professor {
+	align-items: baseline;
+}
+.submission_info a {
+	float: right;
+	background-color: rgba(0,0,0,0.3);
+	border-style: dotted;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.3);
+	height: auto;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	color: rgba(0,0,0,0.7);
+	text-decoration: none;
+}
+.submission_info a:hover {
+	text-decoration: underline;
+}
+/* End of index.html style. Start of upload.html */
+ #upload_title {
+	 font-size: 1.3em;
+	 font-weight: bold;
+ }
+ #upload_contents {
+	 display: flex;
+	 flex-direction: row;
+ }
+ #upload_professor, #upload_author {
+	 max-width: 250px;
+	 display: flex;
+	 flex-direction: column;
+	 margin: 5px;
+ }
+ #upload_form {
+	 display: flex;
+	 justify-content: space-between;
+ }
+ #file-select-and-upload {
+	 float: right;
+	 position: relative;
+	 top: 75px;
+	 display: flex;
+	 justify-content: center;
+ }
+#predmet_select {
+	max-width: 100px;
 }
