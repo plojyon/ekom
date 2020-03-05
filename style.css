@@ -86,6 +86,9 @@ aside {
 	min-width: 200px;
 	height: 100%;
 }
+h1 {
+	display: inline;
+}
 aside > * {
 	margin: 10px 0;
 }
