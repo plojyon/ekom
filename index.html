@@ -382,6 +382,12 @@
 				<p>Uporabnisko ime: <br><input type="text" name="username" id="username"></p><br>
 				<p>Geslo:<br><input type="text" name="password" id="password">
 			</details>
+			<script>
+				// da se usi FAQji odprejo po defaultu
+				Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
+					obj.open = true;
+				});
+			</script>
 		</aside>
 	</main>
 </html>
