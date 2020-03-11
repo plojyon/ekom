@@ -16,9 +16,11 @@
 	$statement->store_result();
 	$rows = $statement->num_rows;
 	$statement->bind_result($name, $verified);
-	$data = array()
+	$data = array();
+	$i = 0;
 	while ($statement->fetch()) {
 		$data[$i]= array("name" => $name, "verified" => $verified);
+		$i++;
 	}
 	echo json_encode($data);
 	$conn->close();
