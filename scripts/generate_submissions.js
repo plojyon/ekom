@@ -146,6 +146,7 @@ function createSubmission(sub, index, arr) {
 	text_div.appendChild(submission_info);
 
 	submission = document.createElement("div");
+	submission.id = sub.filename;
 	submission.classList.add("submission");
 	submission.classList.add(sub.predmet);
 	submission.appendChild(subject_indicator);

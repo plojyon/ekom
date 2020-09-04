@@ -27,10 +27,10 @@
 	</div>
 	<main>
 		<article id="submissions_list">
-			<div class="submission" id="noresult">
+			<div class="submission hidden" id="noresult">
 				<p>Noben submission ne ustreza vašemu iskanju. <a href="" onclick="alert('lorem ipsum'); return true;">Ponastavi filtre</a>.<p>
 			</div>
-			<div class="submission">
+			<div class="submission" id="sub123.pdf">
 				<div>
 					<div class="subject_icon">
 						<i class="fas fa-square-root-alt"></i>
@@ -62,7 +62,7 @@
 				<div id="upload_subject">
 					<section>
 						<p>Predmet:<p>
-						<select id="predmet_select">
+						<select id="upload_predmet">
 							<option>Angleščina</option>
 							<option>Biologija</option>
 							<option>Filozofija</option>
@@ -109,7 +109,7 @@
 						<div id="upload_professor">
 							<section>
 								<i class="fas fa-chalkboard-teacher"></i>
-								<select id="professor_select">
+								<select id="upload_prof">
 									<optgroup label="Angleščina">
 										<option>Matejka Kuhar</option>
 										<option>Maja Lebar Bajec</option>
@@ -245,7 +245,8 @@
 				<br>
 				<section>
 					<p>Letnik:</p>
-					<select id="letnik_select">
+					<select id="letnik_select" onchange= "refresh_filters()">
+						<option value="" selected>Vseeno mi je</option>
 						<option value="1">1. Letnik</option>
 						<option value="2">2. Letnik</option>
 						<option value="3">3. Letnik</option>
@@ -254,18 +255,20 @@
 				</section>
 				<section>
 					<p>Verified:</p>
-					<input type="checkbox" id="verified_checkbox">
+					<input type="checkbox" id="verified_checkbox" onchange= "refresh_filters()" >
 				</section>
 				<section>
 					<p>Predmet:<p>
-					<select id="predmet_select">
+					<select id="predmet_select" onchange= "refresh_filters()">
+						<option value = "" selected>Vseeno mi je</option>
 						<!-- Filled by javascript -->
 						<!-- <option value="mat">Matematika</option> -->
 					</select>
 				</section>
 				<section>
 					<p>Profesor:</p>
-					<select id="professor_select">
+					<select id="professor_select" onchange= "refresh_filters()">
+						<option value="" selected>Vseeno mi je</option>
 						<optgroup label="Angleščina">
 							<option>Matejka Kuhar</option>
 							<option>Maja Lebar Bajec</option>

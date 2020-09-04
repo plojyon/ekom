@@ -113,7 +113,6 @@ nav a:hover {
 }
 #noresult {
 	width: 50%;
-	display: flex;
 	justify-content: center;
 }
 .subject_icon {
@@ -186,4 +185,9 @@ p.author, p.professor {
  }
 #predmet_select {
 	max-width: 100px;
+}
+
+
+.hidden {
+	display: none; !important
 }
