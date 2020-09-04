@@ -1,5 +1,18 @@
 icon_link = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png";
-submissions = [
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		//document.getElementById("demo").innerHTML = this.responseText;
+		console.log(this.responseText);
+		submissions = JSON.parse(this.responseText);
+		submissions.forEach(createSubmission);
+	}
+};
+xhttp.open("GET", "services/getSubmissions.php", true);
+xhttp.send();
+
+/*submissions = [
+
 	{
 		"title": "Deutsche grammatik oder wendische Sprache",
 		"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
@@ -57,6 +70,7 @@ submissions = [
 		"professor": "untidy geng"
 	},
 ];
+*/
 
 
 function createSubmission(sub, index, arr) {

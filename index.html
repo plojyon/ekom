@@ -10,7 +10,6 @@
 		<script src="scripts/filters.js"></script>
 		<script>
 			window.onload = function() {
-				submissions.forEach(createSubmission);
 				Object.keys(predmeti).forEach(addPredmet);
 			}
 		</script>
@@ -239,6 +238,7 @@
 			</div>
 		</div>
 		</article>
+
 		<aside id="filters-and-login">
 			<details>
 				<summary><h1>Filters</h1></summary>
@@ -376,12 +376,13 @@
 					</select>
 				</section>
 			</details>
+			<!--
 			<details>
 				<summary><h1>Login</h1></summary>
 				<br>
 				<p>Uporabnisko ime: <br><input type="text" name="username" id="username"></p><br>
 				<p>Geslo:<br><input type="text" name="password" id="password">
-			</details>
+			</details>-->
 			<script>
 				// da se usi FAQji odprejo po defaultu
 				Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
