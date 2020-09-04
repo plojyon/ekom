@@ -98,18 +98,18 @@
 				</div>
 				<div id="upload_contents">
 					<p>Snov:<p>
-					<input type="checkbox" id="snov_checkbox">&nbsp;
+					<input type="checkbox" id="snov_checkbox" name="snov_checkbox">&nbsp;
 					<p>Test:<p>
-					<input type="checkbox" id="test_checkbox">&nbsp;
+					<input type="checkbox" id="test_checkbox" name="test_checkbox">&nbsp;
 					<p>Vaje:<p>
-					<input type="checkbox" id="vaje_checkbox">&nbsp;
+					<input type="checkbox" id="vaje_checkbox" name="vaje_checkbox">&nbsp;
 				</div>
-				<div id="upload_form">
+				<div id="upload_form" enctype="multipart/form-data" action="/services/upload.php" method="post">
 					<div id="upload-prof-sub-auth">
 						<div id="upload_professor">
 							<section>
 								<i class="fas fa-chalkboard-teacher"></i>
-								<select id="upload_prof">
+								<select id="upload_prof" name="upload_prof">
 									<optgroup label="Angleščina">
 										<option>Matejka Kuhar</option>
 										<option>Maja Lebar Bajec</option>
