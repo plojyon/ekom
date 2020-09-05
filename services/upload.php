@@ -11,4 +11,4 @@ move_uploaded_file($temp, "../files/".$filename.".".$extension);
 <!-- Redirect back to index.html -->
 <meta http-equiv = "refresh" content = "0; url=../index.html" />
 <p>Preusmerjanje ...</p>
-<p>Ce se ne zgodi nic, kliknite <a href="../index.html">tukaj</a>.</p>
+<p>Če se ne zgodi nič, kliknite <a href="../index.html">tukaj</a>.</p>
