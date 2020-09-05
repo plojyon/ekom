@@ -1,11 +1,14 @@
 <?php
-//$file = $_POST["upload_file"];
-echo print_r($_POST);
-echo "<br>";
-echo "<br>";
-echo print_r($_GET);
-echo "<br>";
-echo "<br>";
-echo print_r($_FILES);
-//file_put_contents("accepted.gif", $file);
+
+$filename = "upploaddd"; // TODO: set up non-conflicting naming scheme
+
+$file = $_FILES['file_upload'];
+$extension = pathinfo($file['name'])["extension"];
+$temp = $file['tmp_name'];
+move_uploaded_file($temp, "../files/".$filename.".".$extension);
 ?>
+
+<!-- Redirect back to index.html -->
+<meta http-equiv = "refresh" content = "0; url=../index.html" />
+<p>Preusmerjanje ...</p>
+<p>Ce se ne zgodi nic, kliknite <a href="../index.html">tukaj</a>.</p>
