@@ -1,4 +1,0 @@
-<?php
-	include("../../credentials.php");
-
-?>

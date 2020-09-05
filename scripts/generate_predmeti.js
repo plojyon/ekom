@@ -7,8 +7,8 @@ function addPredmet(abbr) {
 }
 
 predmeti = {
-	"all": {
-		"name": "Vsi predmeti",
+	"": {
+		"name": "Vseeno mi je",
 		"icon": "fas fa-graduation-cap"
 	},
 	"ang": {
