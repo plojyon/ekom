@@ -9,94 +9,203 @@ function addPredmet(abbr) {
 predmeti = {
 	"": {
 		"name": "Vseeno mi je",
-		"icon": "fas fa-graduation-cap"
+		"icon": "fas fa-graduation-cap",
+		"prof": ["Vseeno mi je"]
 	},
 	"ang": {
 		"name": "Angleščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Matejka Kuhar",
+			"Matejka Kuhar",
+			"Maja Lebar Bajec",
+			"Ana Likar",
+			"Helena Osterman",
+			"Irena Škulj",
+			"Ksenija Terglav Jakopin",
+			"Sandra Uranič",
+		]
 	},
 	"bio": {
 		"name": "Biologija",
-		"icon": "fa fa-leaf"
+		"icon": "fa fa-leaf",
+		"prof": [
+			"Veronika Babič",
+			"Sonja Kačar",
+			"Ina Kretič",
+		]
 	},
 	"fil": {
 		"name": "Filozofija",
-		"icon": "far fa-lightbulb"
+		"icon": "far fa-lightbulb",
+		"prof": [
+			"Gorazd Jurman",
+		]
 	},
 	"fiz": {
 		"name": "Fizika",
-		"icon": "fas fa-atom"
+		"icon": "fas fa-atom",
+		"prof": [
+			"Ruben Belina",
+			"Aleš Iršič",
+			"Natalija Novak",
+			"Nataša Ranđelović",
+		]
 	},
 	"fra": {
 		"name": "Francoščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Neža Umek Podgornik",
+		]
 	},
 	"geo": {
 		"name": "Geografija",
-		"icon": "fa fa-globe"
+		"icon": "fa fa-globe",
+		"prof": [
+			"Tatjana Ferder Brunšek",
+			"Ingrid Florjanc",
+			"Lea Nemec",
+		]
 	},
 	"gla": {
 		"name": "Glasba",
-		"icon": "fa fa-music"
+		"icon": "fa fa-music",
+		"prof": [
+			"Marjeta Kozmus",
+		]
 	},
 	"inf": {
 		"name": "Informatika",
-		"icon": "fa fa-code"
+		"icon": "fa fa-code",
+		"prof": [
+			"Betka Burger",
+			"Žan Ternik",
+		]
 	},
 	"ita": {
 		"name": "Italijanščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Klara Antoni Jančič",
+		]
 	},
 	"kem": {
 		"name": "Kemija",
-		"icon": "fa fa-flask"
+		"icon": "fa fa-flask",
+		"prof": [
+			"Nika Cebin",
+			"Darko Košič",
+			"Špela Tršek",
+		]
 	},
 	"lum": {
 		"name": "Likovna umetnost",
-		"icon": "fa fa-paint-brush"
+		"icon": "fa fa-paint-brush",
+		"prof": [
+			"Mihaela Gregorc",
+		]
 	},
 	"mat": {
 		"name": "Matematika",
-		"icon": "fas fa-square-root-alt"
+		"icon": "fas fa-square-root-alt",
+		"prof": [
+			"Uroš Cotman",
+			"Maruša Dobljekar",
+			"Tatjana Levstek",
+			"Tamara Možina Artač",
+			"Rok Škufca",
+		]
 	},
 	"nem": {
 		"name": "Nemščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Nadja Gliha Olenik",
+			"Matejka Kuhar",
+			"Matejka Kuhar",
+			"Helena Osterman",
+			"Alenka Vojsk",
+		]
 	},
 	"ped": {
 		"name": "Pedagogika",
-		"icon": "fas fa-chalkboard-teacher"
+		"icon": "fas fa-chalkboard-teacher",
+		"prof": [
+			"Nina Levstik",
+		]
 	},
 	"psh": {
 		"name": "Psihologija",
-		"icon": "fas fa-brain"
+		"icon": "fas fa-brain",
+		"prof": [
+			"Peter Prhavc",
+			"Lidija Srša",
+		]
 	},
 	"rus": {
 		"name": "Ruščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Bojana Petrin",
+		]
 	},
 	"slo": {
 		"name": "Slovenščina",
-		"icon": "fas fa-book"
+		"icon": "fas fa-book",
+		"prof": [
+			"Irena Ceklin Bačar",
+			"Tatjana Cvetko",
+			"Nina Levstik",
+			"Andreja Pavle Jurman",
+			"Bojana Petrin",
+			"Nina Prešern",
+			"Petra Špiletič Latin",
+		]
 	},
 	"soc": {
 		"name": "Sociologija",
-		"icon": "fas fa-user-friends"
+		"icon": "fas fa-user-friends",
+		"prof": [
+			"Erika Berlan",
+		]
 	},
 	"spa": {
 		"name": "Španščina",
-		"icon": "fa fa-language"
+		"icon": "fa fa-language",
+		"prof": [
+			"Tomaž Šmid",
+		]
 	},
 	"svz": {
 		"name": "Športna vzgoja",
-		"icon": "fa fa-futbol"
+		"icon": "fa fa-futbol",
+		"prof": [
+			"Bojana Bizjan",
+			"Tomaž Karče",
+			"Miha Kobe",
+			"Nataša Korošec",
+			"Nataša Korošec",
+			"Urša Šilc Trček",
+			"Blanka Tomac",
+		]
 	},
 	"uzg": {
 		"name": "Umetnostna zgodovina",
-		"icon": "fa fa-landmark"
+		"icon": "fa fa-landmark",
+		"prof": [
+			"Boris Bovha",
+		]
 	},
 	"zgo": {
 		"name": "Zgodovina",
-		"icon": "fas fa-history"
+		"icon": "fas fa-history",
+		"prof": [
+			"Boris Bovha",
+			"Arjana Marinič",
+			"Lea Nemec",
+			"Boris Pavliha",
+			"Roman Vogrinc",
+		]
 	}
 };
