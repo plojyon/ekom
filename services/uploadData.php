@@ -6,7 +6,7 @@
 
 	$statement = $conn->prepare($ukaz);
 	$statement->bind_param('sssissss', $_POST[author],
-	 								   $_POST[professor],
+									   $_POST[professor],
 									   $_POST[predmet],
 									   $_POST[letnik],
 									   $_POST[tags],
