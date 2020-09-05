@@ -8,17 +8,17 @@
 	<body>
 		<form enctype="multipart/form-data" action="/services/upload.php" method="post">
 			<div>Vnesi svoje ime</div>
-			<input type="text" name="author_upload" id="author_upload"><br>
+			<input type="text" name="author" id="author_upload"><br>
 			<div>Vnesi naslov datoteke</div>
-			<input type="text" name="title_upload" id="title_upload"><br>
-			<select id="letnik_upload">
+			<input type="text" name="title" id="title_upload"><br>
+			<select name="predmet" id="predmet_upload">
 				<option disabled selected value=""> Izberi letnik </option>
 				<option value="1">1. Letnik</option>
 				<option value="2">2. Letnik</option>
 				<option value="3">3. Letnik</option>
 				<option value="4">4. Letnik</option>
 			</select>
-			<select name="professor_upload" id="professor_upload">
+			<select name="professor" id="professor_upload">
 				<option disabled selected value=""> Izberi profesorja </option>
 				<optgroup label="Angleščina">
 					<option>Matejka Kuhar</option>
@@ -128,7 +128,7 @@
 					<option>Roman Vogrinc</option>
 				</optgroup>
 			</select>
-			<select name="predmet_upload" id="predmet_upload">
+			<select name="predmet" id="predmet_upload">
 				<option disabled selected value=""> Izberi predmet </option>
 				<option>Angleščina</option>
 				<option>Biologija</option>
@@ -153,7 +153,7 @@
 				<option>Umetnostna zgodovina</option>
 				<option>Zgodovina</option>
 			</select><br>
-			<input type="file" name="file_upload" id="file_upload">
+			<input type="file" name="file" id="file_upload">
   			<input type="submit">
 		</form>
 	</body>
