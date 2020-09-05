@@ -6,6 +6,21 @@ function addPredmet(abbr) {
 	document.getElementById("predmet_select").appendChild(opt);
 }
 
+function addProfessors(abbr) {
+	var optgroup = document.createElement("optgroup");
+	optgroup.label = predmeti[abbr].name;
+
+	var profesorji = predmeti[abbr]["prof"];
+	profesorji.forEach((prof, i) => {
+		var opt = document.createElement("option");
+		//opt.value = predmeti[abbr]["prof"][i];
+		opt.innerText = prof;
+		optgroup.appendChild(opt);
+	});
+
+	document.getElementById("professor_select").appendChild(optgroup);
+}
+
 predmeti = {
 	"": {
 		"name": "Vseeno mi je",
