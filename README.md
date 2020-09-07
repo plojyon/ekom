@@ -3,9 +3,24 @@ eKomunizem
  <!-- Čč Šš Žž -->
 
 ## TODO:
- - [ ] upload.php mora povedat bazi za nov submission
- - [ ] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat
- - [ ] js funkcija ki generira html <select> za profesorje in predmete
+ - [x] upload.php mora povedat bazi za nov submission
+ - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat
+ - [x] js funkcija ki generira html <select> za profesorje in predmete
+ - [ ] #noresults se mora generirat
+ - [ ] upload style
+ - [ ] navodila za upload
+ - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)
+ - [ ] recruitment message
+ - [ ] upload.html mora met disabled opcijo 'izberi profesorja in predmet'
+ - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)
+ - [ ] remove first submission ne da pokvars use
+ - [ ] mobile site (optional)
+ - [ ] dodaj vec snovi
+ - [ ] odstrani nepomebne zadeve (filter by tags)
+ - [ ] ozadje in testi z njim
+ - [ ] clean code
+ - [ ] dodaj svoj podpis
+
 <!--
  =============
  Ikone v rabi:
