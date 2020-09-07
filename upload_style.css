@@ -2,7 +2,7 @@ body {
 	font-family: "Roboto";
 	margin: 0;
 	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,81,167,0.49631190366771705) 51%, rgba(139,174,223,0.49631190366771705) 100%);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,81,167,0.5) 51%, rgba(139,174,223,0.5) 100%);
 }
 
 #form_header {

@@ -20,6 +20,8 @@ eKomunizem
  - [ ] ozadje in testi z njim
  - [ ] clean code
  - [ ] dodaj svoj podpis
+ - [ ] do something about the verified checkbox
+ - [ ] upload.html resizing
 
 <!--
  =============
