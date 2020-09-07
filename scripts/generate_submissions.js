@@ -100,7 +100,7 @@ function createSubmission(sub, index, arr) {
 
 	title = document.createElement("a");
 	title.classList.add("submission_title");
-	title.href = "http://google.com";
+	title.href = "/files/"+sub.filename;
 	title.innerText = sub.title;
 
 	tags = document.createElement("p");
