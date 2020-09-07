@@ -1,1 +1,54 @@
+body {
+	font-family: "Roboto";
+	margin: 0;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,81,167,0.49631190366771705) 51%, rgba(139,174,223,0.49631190366771705) 100%);
+}
 
+#form_header {
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	font-size: 1.3em;
+	padding-top: 0px;
+	margin-bottom: 10px;
+}
+
+#basic_form {
+	padding: 2%;
+	background-color: rgba(250, 250, 250, 0.8);
+	border-color: black;
+	border-style: dotted;
+	margin-top: 7%;
+	margin-left: 30%;
+	margin-right: 30%;
+	box-shadow: 2px 2px rgba(150, 150, 150);
+	line-height: 2.6;
+	padding-bottom: 0;
+	border-radius: 14px;
+}
+
+.question {
+	float: left;
+}
+
+.answer {
+	float: right;
+	width: 35%;
+	margin: 1%;
+	position: relative;
+	top: 6px;
+}
+
+#submit_quarry {
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+#submit {
+	border-radius: 8px;
+	width: 120px;
+	height: 30px;
+
+}
