@@ -80,6 +80,7 @@ aside {
 	margin: 25px;
 	padding: 25px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(255,255,255,.8);
@@ -157,6 +158,11 @@ p.author, p.professor {
 .submission_info a:hover {
 	text-decoration: underline;
 }
+
+#letnik_contents, #predmet_contents {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
 /* End of index.html style. Start of upload.html */
  #upload_title {
 	 font-size: 1.3em;
@@ -167,7 +173,6 @@ p.author, p.professor {
 	 flex-direction: row;
  }
  #upload_professor, #upload_author {
-	 max-width: 250px;
 	 display: flex;
 	 flex-direction: column;
 	 margin: 5px;
@@ -183,10 +188,6 @@ p.author, p.professor {
 	 display: flex;
 	 justify-content: center;
  }
-#predmet_select {
-	max-width: 200%;
-}
-
 
 .hidden {
 	display: none; !important
