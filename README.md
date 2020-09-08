@@ -3,26 +3,26 @@ eKomunizem
  <!-- Čč Šš Žž -->
 
 ## TODO:
- - [x] upload.php mora povedat bazi za nov submission
- - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat
- - [x] js funkcija ki generira html <select> za profesorje in predmete
- - [ ] #noresults se mora generirat
- - [ ] upload style
- - [ ] navodila za upload
- - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)
- - [x] recruitment message
- - [x] make file number dependant on number of files, not numbers of $rows+1
- - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'
- - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)
- - [ ] remove first submission ne da pokvars use
- - [ ] mobile site (optional)
- - [ ] dodaj vec snovi
- - [ ] odstrani nepomebne zadeve (filter by tags)
- - [ ] ozadje in testi z njim
- - [ ] clean code
- - [ ] dodaj svoj podpis
- - [x] do something about the verified checkbox
- - [ ] upload.html resizing
+ - [x] upload.php mora povedat bazi za nov submission  
+ - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
+ - [x] js funkcija ki generira html <select> za profesorje in predmete  
+ - [ ] #noresults se mora generirat  
+ - [ ] upload style  
+ - [ ] navodila za upload  
+ - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)  
+ - [x] recruitment message  
+ - [x] make file number dependant on number of files, not numbers of $rows+1  
+ - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'  
+ - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)  
+ - [ ] remove first submission ne da pokvars use  
+ - [ ] mobile site (optional)  
+ - [ ] dodaj vec snovi  
+ - [ ] odstrani nepomebne zadeve (filter by tags)  
+ - [ ] ozadje in testi z njim  
+ - [ ] clean code  
+ - [ ] dodaj svoj podpis  
+ - [x] do something about the verified checkbox  
+ - [ ] upload.html resizing  
 
 <!--
  =============
