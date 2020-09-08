@@ -11,7 +11,8 @@ eKomunizem
  - [ ] navodila za upload
  - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)
  - [ ] recruitment message
- - [ ] upload.html mora met disabled opcijo 'izberi profesorja in predmet'
+ - [x] make file number dependant on number of files, not numbers of $rows+1
+ - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)
  - [ ] remove first submission ne da pokvars use
  - [ ] mobile site (optional)
