@@ -32,7 +32,6 @@ predmeti = {
 		"icon": "fa fa-language",
 		"prof": [
 			"Matejka Kuhar",
-			"Matejka Kuhar",
 			"Maja Lebar Bajec",
 			"Ana Likar",
 			"Helena Osterman",
