@@ -10,7 +10,7 @@ eKomunizem
  - [ ] upload style
  - [ ] navodila za upload
  - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)
- - [ ] recruitment message
+ - [x] recruitment message
  - [x] make file number dependant on number of files, not numbers of $rows+1
  - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)
@@ -21,7 +21,7 @@ eKomunizem
  - [ ] ozadje in testi z njim
  - [ ] clean code
  - [ ] dodaj svoj podpis
- - [ ] do something about the verified checkbox
+ - [x] do something about the verified checkbox
  - [ ] upload.html resizing
 
 <!--
