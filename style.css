@@ -184,7 +184,7 @@ p.author, p.professor {
 	 justify-content: center;
  }
 #predmet_select {
-	max-width: 100px;
+	max-width: 200%;
 }
 
 
