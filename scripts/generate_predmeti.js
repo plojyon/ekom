@@ -22,11 +22,11 @@ function addProfessors(abbr) {
 }
 
 predmeti = {
-	"": {
+/*	"": {
 		"name": "Vseeno mi je",
 		"icon": "fas fa-graduation-cap",
 		"prof": ["Vseeno mi je"]
-	},
+	},*/
 	"ang": {
 		"name": "Angleščina",
 		"icon": "fa fa-language",

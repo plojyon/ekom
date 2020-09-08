@@ -8,10 +8,19 @@ $statement->store_result();
 $rows = $statement->num_rows;
 $statement->close();
 
+$directory = "../files/";
+$filecount = 0;
+$files = glob($directory . "*");
+if ($files){
+$filecount = count($files);
+
+echo "There were $filecount files";
+}
+
 $file = $_FILES['file'];
 $extension = pathinfo($file['name'])["extension"];
 $temp = $file['tmp_name'];
-$filename = "zapiski_".$_POST["predmet"]."_".($rows+1).".".$extension;
+$filename = "zapiski_".$_POST["predmet"]."_".($filecount+1).".".$extension;
 move_uploaded_file($temp, "../files/".$filename);
 
 $ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename)
