@@ -6,7 +6,6 @@ eKomunizem
  - [x] upload.php mora povedat bazi za nov submission  
  - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
  - [x] js funkcija ki generira html <select> za profesorje in predmete
- - [x] test 
  - [ ] #noresults se mora generirat  
  - [ ] upload style  
  - [ ] navodila za upload  
@@ -15,7 +14,7 @@ eKomunizem
  - [x] make file number dependant on number of files, not numbers of $rows+1  
  - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'  
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)  
- - [ ] remove first submission ne da pokvars use  
+ - [x] remove first submission ne da pokvars use  
  - [ ] mobile site (optional)  
  - [ ] dodaj vec snovi  
  - [ ] odstrani nepomebne zadeve (filter by tags)  
