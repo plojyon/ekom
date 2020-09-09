@@ -21,10 +21,9 @@ function refresh_filters() {
 			elementname.classList.add("hidden");
 		}
 	 });
-
-	var count = document.querySelectorAll(".hidden").length
-	console.log(count);
-	if (count != 0) {
+	var count_hidden = document.querySelectorAll(".hidden").length
+	var count_all = document.getElementById("submissions_list").childElementCount;
+	if (count_all == count_hidden) {
 		noresult.classList.remove("hidden");
 	} else {
 		noresult.classList.add("hidden");
