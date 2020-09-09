@@ -6,7 +6,7 @@ eKomunizem
  - [x] upload.php mora povedat bazi za nov submission  
  - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
  - [x] js funkcija ki generira html <select> za profesorje in predmete  
- - [ ] #noresults se mora generirat  
+ - [] #noresults se mora generirat  
  - [ ] upload style  
  - [ ] navodila za upload  
  - [ ] preden submita nej js preveri ali so vsa polja izpolnjena (pravilno)  
