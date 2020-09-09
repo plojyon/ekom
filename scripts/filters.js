@@ -20,9 +20,13 @@ function refresh_filters() {
 		} else {
 			elementname.classList.add("hidden");
 		}
-		console.log(filter_letnik)
-		console.log(filter_predmet)
-		console.log(filter_professor)
 	 });
 
+	var count = document.querySelectorAll(".hidden").length
+	console.log(count);
+	if (count != 0) {
+		noresult.classList.remove("hidden");
+	} else {
+		noresult.classList.add("hidden");
+	}
 }
