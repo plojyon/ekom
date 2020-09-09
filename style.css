@@ -68,6 +68,7 @@ main {
 	margin-top: 1em;
 	padding-bottom: 3em;
 	margin-left: 25px;
+	width: 100%;
 }
 #upload_filters {
 	display: flex;
