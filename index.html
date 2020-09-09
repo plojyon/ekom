@@ -13,8 +13,6 @@
 				Object.keys(predmeti).forEach(addPredmet);
 				Object.keys(predmeti).forEach(addProfessors);
 			}
-			//window.onload = function refresh_filters() {
-			//}
 		</script>
 		<!--Hey!
 		Imas izkusnje z razvijanjem spletnih strani?
@@ -255,7 +253,6 @@
 			</div>
 			-->
 		</article>
-
 		<aside id="filters-and-login">
 			<details>
 				<summary><h1>Filters</h1></summary>
@@ -308,7 +305,7 @@
 				<p>Geslo:<br><input type="text" name="password" id="password">
 			</details>-->
 			<script>
-				// da se usi FAQji odprejo po defaultu
+				// da se usi filtri odprejo po defaultu
 				Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
 					obj.open = true;
 				});
