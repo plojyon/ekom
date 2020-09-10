@@ -193,3 +193,21 @@ p.author, p.professor {
 .hidden {
 	display: none; !important
 }
+
+@media only screen and (max-width: 800px) {
+	main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#submissions_list {
+		margin-left: 0;
+	}
+	.submission {
+		width: 80%;
+	}
+
+	#banner {
+		display: none;
+	}
+}

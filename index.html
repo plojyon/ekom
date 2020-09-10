@@ -306,9 +306,11 @@
 			</details>-->
 			<script>
 				// da se usi filtri odprejo po defaultu
-				Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
-					obj.open = true;
-				});
+				if (screen.width >= 800) {
+					Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
+						obj.open = true;
+					});
+				}
 			</script>
 		</aside>
 	</main>
