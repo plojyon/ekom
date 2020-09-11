@@ -216,4 +216,8 @@ p.author, p.professor {
 		margin: auto;
 		margin-bottom: 25px;
 	}
+
+	body {
+		font-size: 0.8em;
+	}
 }
