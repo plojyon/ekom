@@ -210,4 +210,10 @@ p.author, p.professor {
 	#banner {
 		display: none;
 	}
+
+	aside {
+		width: 30%;
+		margin: auto;
+		margin-bottom: 25px;
+	}
 }
