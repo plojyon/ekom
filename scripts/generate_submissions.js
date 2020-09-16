@@ -145,7 +145,7 @@ function createSubmission(sub, index, arr) {
 
 	submission = document.createElement("a");
 	submission.id = sub.filename;
-	submission.href = "/files/"+sub.filename;
+	submission.href = "files/"+sub.filename;
 	submission.classList.add("submission");
 	submission.classList.add(sub.predmet);
 	submission.appendChild(subject_indicator);
