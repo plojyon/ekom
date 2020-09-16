@@ -24,6 +24,7 @@ eKomunizem
  - [ ] clean code  
  - [x] dodaj svoj podpis  
  - [x] do something about the verified checkbox  
+ - [ ] reCaptcha
 
 <!--
  =============
