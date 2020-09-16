@@ -7,9 +7,9 @@ eKomunizem
  - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
  - [x] js funkcija ki generira html za profesorje in predmete  
  - [x] noresults se mora generirat  
- - [ ] upload style mobile  
+ - [x] upload style mobile  
  - [ ] navodila za upload  
- - [ ] mobile site rab link do upload.html  
+ - [x] mobile site rab link do upload.html  
  - [ ] preden submita nej js preveri ali so vsa polja izpolnjena  
  - [x] recruitment message  
  - [x] make file number dependent on number of files, not numbers of $rows+1  
@@ -18,7 +18,7 @@ eKomunizem
  - [ ] placeholderji na upload page  
  - [x] remove first submission ne da pokvars use  
  - [x] mobile site (mandatory af)  
- - [ ] dodaj vec snovi  
+ - [ ] dodaj vec submissionov  
  - [x] odstrani nepomebne zadeve (filter by tags)  
  - [ ] ozadje in testi z njim  
  - [ ] clean code  
