@@ -53,6 +53,12 @@ body {
 
 }
 
+#navodila {
+	font-size: 0.8em;
+	line-height: 1;
+	color: grey;
+}
+
 @media only screen and (max-width: 800px) {
 	#basic_form {
 		margin: 1% 2%;
