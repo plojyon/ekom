@@ -2,11 +2,11 @@ function applyTagFilter(tag) {
 	alert("Yeah no, you cannot filter by " + tag);
 }
 function refresh_filters() {
-	 submissions.forEach((submission, i) => {
-	 	var filter_letnik = document.getElementById("letnik_select").value;
-	 	//var filter_verified = document.getElementById("verified_checkbox").value;
-	 	var filter_predmet = document.getElementById("predmet_select").value;
-	 	var filter_professor = document.getElementById("professor_select").value;
+	submissions.forEach((submission, i) => {
+		var filter_letnik = document.getElementById("letnik_select").value;
+		//var filter_verified = document.getElementById("verified_checkbox").value;
+		var filter_predmet = document.getElementById("predmet_select").value;
+		var filter_professor = document.getElementById("professor_select").value;
 		var submission_letnik = submission ["letnik"];
 		//var submission_verified = submission ["verified"];
 		var submission_predmet = submission ["predmet"];
@@ -20,12 +20,15 @@ function refresh_filters() {
 		} else {
 			elementname.classList.add("hidden");
 		}
-	 });
-	var count_hidden = document.querySelectorAll(".hidden").length
+	});
+	noresult.classList.add("hidden");
+	var count_hidden = document.querySelectorAll(".hidden").length;
 	var count_all = document.getElementById("submissions_list").childElementCount;
 	if (count_all == count_hidden) {
 		noresult.classList.remove("hidden");
 	} else {
 		noresult.classList.add("hidden");
 	}
+	//console.log(count_all);
+	//console.log(count_hidden);
 }
