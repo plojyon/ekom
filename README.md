@@ -24,7 +24,8 @@ eKomunizem
  - [ ] clean code  
  - [x] dodaj svoj podpis  
  - [x] do something about the verified checkbox  
- - [ ] reCaptcha
+ - [ ] reCaptcha  
+ - [ ] interface za deletanje submissionov (administracija)  
 
 <!--
  =============
