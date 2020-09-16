@@ -30,13 +30,15 @@
 			<div id="form_header">
 				Obrazec za objavo datoteke
 			</div>
+			<div>
+				<p>Navodila za izpolnjenjevanje vloge
 			<form enctype="multipart/form-data" action="services/upload.php" method="post">
 				<div class="question">Vnesi svoje ime:</div>
-				<input type="text" name="author" id="author_upload" class="answer"><br>
+				<input type="text" name="author" id="author_upload" class="answer" placeholder="Ime"><br>
 				<div class="question">Poimenuj svojo datoteko:</div>
-				<input type="text" name="title" id="title_upload" class="answer"><br>
+				<input type="text" name="title" id="title_upload" class="answer" placeholder="Naslov datoteke"><br>
 				<div class="question">Katero snov vsebuje:</div>
-				<input type="text" name="tags" id="tags_upload" class="answer"><br>
+				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="Vsebina datoteke"><br>
 				<div class="question">Izberi letnik:</div>
 				<select name="letnik" id="letnik_upload" class="answer">
 					<option selected="true" disabled="disabled">Letnik</option>
