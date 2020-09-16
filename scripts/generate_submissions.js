@@ -98,9 +98,8 @@ function createSubmission(sub, index, arr) {
 	subject_indicator.appendChild(icon_label);
 
 
-	title = document.createElement("a");
+	title = document.createElement("span");
 	title.classList.add("submission_title");
-	title.href = "/files/"+sub.filename;
 	title.innerText = sub.title;
 
 	tags = document.createElement("p");
@@ -144,8 +143,9 @@ function createSubmission(sub, index, arr) {
 	text_div.appendChild(spacer);
 	text_div.appendChild(submission_info);
 
-	submission = document.createElement("div");
+	submission = document.createElement("a");
 	submission.id = sub.filename;
+	submission.href = "/files/"+sub.filename;
 	submission.classList.add("submission");
 	submission.classList.add(sub.predmet);
 	submission.appendChild(subject_indicator);

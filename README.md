@@ -16,14 +16,13 @@ eKomunizem
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)  
  - [ ] placeholderji na upload page
  - [x] remove first submission ne da pokvars use  
- - [ ] mobile site (mandatory af)  
+ - [x] mobile site (mandatory af)  
  - [ ] dodaj vec snovi  
  - [ ] odstrani nepomebne zadeve (filter by tags)  
  - [ ] ozadje in testi z njim  
  - [ ] clean code  
  - [x] dodaj svoj podpis  
  - [x] do something about the verified checkbox  
- - [ ] upload.html resizing  
 
 <!--
  =============
