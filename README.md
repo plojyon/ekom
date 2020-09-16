@@ -18,7 +18,7 @@ eKomunizem
  - [x] remove first submission ne da pokvars use  
  - [x] mobile site (mandatory af)  
  - [ ] dodaj vec snovi  
- - [ ] odstrani nepomebne zadeve (filter by tags)  
+ - [x] odstrani nepomebne zadeve (filter by tags)  
  - [ ] ozadje in testi z njim  
  - [ ] clean code  
  - [x] dodaj svoj podpis  
