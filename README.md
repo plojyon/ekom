@@ -5,16 +5,17 @@ eKomunizem
 ## TODO:
  - [x] upload.php mora povedat bazi za nov submission  
  - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
- - [x] js funkcija ki generira html za profesorje in predmete
+ - [x] js funkcija ki generira html za profesorje in predmete  
  - [x] noresults se mora generirat  
  - [ ] upload style mobile  
  - [ ] navodila za upload  
+ - [ ] mobile site rab link do upload.html  
  - [ ] preden submita nej js preveri ali so vsa polja izpolnjena  
  - [x] recruitment message  
  - [x] make file number dependent on number of files, not numbers of $rows+1  
  - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'  
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)  
- - [ ] placeholderji na upload page
+ - [ ] placeholderji na upload page  
  - [x] remove first submission ne da pokvars use  
  - [x] mobile site (mandatory af)  
  - [ ] dodaj vec snovi  

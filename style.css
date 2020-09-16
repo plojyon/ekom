@@ -73,7 +73,7 @@ main {
 	display: flex;
 	height: 10%;
 }
-aside {
+aside, #mobile_upload {
 	position: sticky;
 	top: 20px;
 	border: dashed;
@@ -189,6 +189,10 @@ p.author, p.professor {
 	 justify-content: center;
  }
 
+ #mobile_upload {
+	 display: none;
+ }
+
 .hidden {
 	display: none; !important
 }
@@ -210,13 +214,26 @@ p.author, p.professor {
 		display: none;
 	}
 
-	aside {
+	aside, #mobile_upload {
 		width: 30%;
 		margin: auto;
 		margin-bottom: 25px;
+		position: relative;
 	}
 
 	body {
 		font-size: 0.8em;
+	}
+
+	#mobile_upload {
+		display: initial;
+		border-radius: 30px;
+		text-decoration: none;
+		color: black;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		border: 5px outset black;
+		font-size: 1.3em;
 	}
 }
