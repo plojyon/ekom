@@ -109,7 +109,6 @@ function createSubmission(sub, index, arr) {
 		t = document.createElement("a");
 		t.classList.add("tag");
 		t.innerText = sub.tags[tag];
-		t.onclick = ((self) => { applyTagFilter(self.target.text); });
 		tags.appendChild(t);
 		tags.appendChild(document.createTextNode(" "));
 	}

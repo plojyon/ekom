@@ -1,6 +1,3 @@
-function applyTagFilter(tag) {
-	alert("Yeah no, you cannot filter by " + tag);
-}
 function refresh_filters() {
 	submissions.forEach((submission, i) => {
 		var filter_letnik = document.getElementById("letnik_select").value;
