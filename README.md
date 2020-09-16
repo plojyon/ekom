@@ -20,7 +20,7 @@ eKomunizem
  - [ ] odstrani nepomebne zadeve (filter by tags)  
  - [ ] ozadje in testi z njim  
  - [ ] clean code  
- - [ ] dodaj svoj podpis  
+ - [x] dodaj svoj podpis  
  - [x] do something about the verified checkbox  
  - [ ] upload.html resizing  
 
