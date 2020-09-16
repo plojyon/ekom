@@ -221,19 +221,23 @@ p.author, p.professor {
 		position: relative;
 	}
 
+	aside h1 {
+		font-weight: normal;
+	}
+
 	body {
 		font-size: 0.8em;
 	}
 
 	#mobile_upload {
 		display: initial;
-		border-radius: 30px;
 		text-decoration: none;
 		color: black;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		border: 5px outset black;
 		font-size: 1.3em;
 	}
+
+
 }

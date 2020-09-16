@@ -52,3 +52,8 @@ body {
 	height: 30px;
 
 }
+
+@media only screen and (max-width: 800px) {
+	#basic_form {
+		margin: 1% 2%;
+	}
