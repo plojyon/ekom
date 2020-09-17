@@ -28,6 +28,7 @@ eKomunizem
  - [ ] interface za deletanje submissionov (administracija)
  - [ ] fix language (sumniki, jezik...)
  - [ ] titles  
+ - [ ] mobile bug, background too shortupdated README
 
 <!--
  =============
