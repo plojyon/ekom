@@ -11,7 +11,7 @@ $statement->store_result();
 $statement->bind_result($username, $password);
 while ($statement->fetch()) {
 	if ($username == $_POST["uname"] && $password == $_POST["pword"]) {
-		echo "use ok buki";
+		echo "prijava uspesna<br>";
 		$code = rand(100000, 999999);
 		echo $code;
 		$statement->close();

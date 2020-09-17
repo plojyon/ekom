@@ -8,13 +8,13 @@ $statement->execute();
 $statement->store_result();
 $rows = $statement->num_rows;
 if ($rows == 0) {
-	echo "ni ok burke";
+	echo "Koda ne obstaja.";
 	exit();
 }
 $statement->bind_result($code,$used);
 while ($statement->fetch()) {
 	if ($used == true) {
-		echo "ni ok bucko";
+		echo "Koda je ze bila uporabljena.";
 		exit();
 	}
 }
