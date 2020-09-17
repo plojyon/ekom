@@ -25,7 +25,9 @@ eKomunizem
  - [x] dodaj svoj podpis  
  - [x] do something about the verified checkbox  
  - [ ] reCaptcha  
- - [ ] interface za deletanje submissionov (administracija)  
+ - [ ] interface za deletanje submissionov (administracija)
+ - [ ] fix language (sumniki, jezik...)
+ - [ ] titles  
 
 <!--
  =============
