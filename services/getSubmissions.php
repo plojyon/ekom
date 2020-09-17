@@ -1,13 +1,13 @@
 <?php
 	include("../../credentials.php");
 
-	$ukaz = "SELECT * FROM submissions";
+	$ukaz = "SELECT author, professor, predmet, letnik, tags, title, filename FROM submissions";
 
 	$statement = $conn->prepare($ukaz);
 	$statement->execute();
 	$statement->store_result();
 	$rows = $statement->num_rows;
-	$statement->bind_result($author, $professor, $predmet, $letnik, $tags, $date, $title, $filename);
+	$statement->bind_result($author, $professor, $predmet, $letnik, $tags, $title, $filename);
 	$data = array();
 	$i = 0;
 	while ($statement->fetch()) {
@@ -16,7 +16,6 @@
 						 "predmet" => $predmet,
 						 "letnik" => $letnik,
 						 "tags" => explode(",", $tags),
-						 "date" => $date,
 						 "title" => $title,
 						 "filename" => $filename);
 		$i++;
