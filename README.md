@@ -29,6 +29,8 @@ eKomunizem
  - [ ] fix language (sumniki, jezik...)
  - [ ] titles  
  - [ ] mobile bug, background too short
+ - [ ] gumbi za druge spletne strani
+ - [ ] v navodila napisi kje se dobi kodo za objavo
 
 <!--
  =============
