@@ -2,6 +2,23 @@
 
 include("../../credentials.php");
 
+$statement = $conn->prepare("SELECT code,used FROM codes WHERE code = ?");
+$statement->bind_param('i', $_POST["code"]);
+$statement->execute();
+$statement->store_result();
+$rows = $statement->num_rows;
+if ($rows == 0) {
+	echo "ni ok burke";
+	exit();
+}
+$statement->bind_result($code,$used);
+while ($statement->fetch()) {
+	if ($used == true) {
+		echo "ni ok bucko";
+		exit();
+	}
+}
+
 $statement = $conn->prepare("SELECT * FROM submissions");
 $statement->execute();
 $statement->store_result();
@@ -12,7 +29,7 @@ $directory = "../files/";
 $filecount = 0;
 $files = glob($directory . "*");
 if ($files){
-$filecount = count($files);
+	$filecount = count($files);
 }
 
 $file = $_FILES['file'];
@@ -21,21 +38,27 @@ $temp = $file['tmp_name'];
 $filename = "zapiski_".$_POST["predmet"]."_".($filecount+1).".".$extension;
 move_uploaded_file($temp, "../files/".$filename);
 
-$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename)
-		 VALUES (?, ?, ?, ?, ?, NOW(), ?, ?)";
+$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename, code)
+		 VALUES (?, ?, ?, ?, ?, NOW(), ?, ?, ?)";
 
 $statement = $conn->prepare($ukaz);
 
-$statement->bind_param('sssisss', $_POST["author"],
+$statement->bind_param('sssisssi', $_POST["author"],
 								   $_POST["professor"],
 								   $_POST["predmet"],
 								   $_POST["letnik"],
 								   $_POST["tags"],
 								   $_POST["title"],
-								   $filename);
+								   $filename,
+							  	   $_POST["code"]);
 echo $_POST["author"]."<br>". $_POST["professor"]."<br>".$_POST["predmet"]."<br>".$_POST["letnik"]."<br>".$_POST["tags"]."<br>".$_POST["title"]."<br>";
 
 $statement->execute();
+
+$statement = $conn->prepare("UPDATE codes SET used = true WHERE code = ?");
+$statement->bind_param('i', $_POST["code"]);
+$statement->execute();
+
 $conn->close();
 
 
