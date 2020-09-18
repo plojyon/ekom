@@ -30,7 +30,7 @@ eKomunizem
  - [ ] interface za pogledat gesla profesorjev (administracija)
  - [ ] fix language (sumniki, jezik...)
  - [ ] titles  
- - [ ] mobile bug, background too short
+ - [x] mobile bug, background too short
  - [ ] gumbi za druge spletne strani
  - [ ] v navodila napisi kje se dobi kodo za objavo
 
