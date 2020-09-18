@@ -10,7 +10,7 @@ eKomunizem
  - [x] upload style mobile  
  - [x] navodila za upload  
  - [x] mobile site rab link do upload.html  
- - [ ] preden submita nej js preveri ali so vsa polja izpolnjena  
+ - [x] preden submita nej js preveri ali so vsa polja izpolnjena  
  - [x] recruitment message  
  - [x] make file number dependent on number of files, not numbers of $rows+1  
  - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'  
@@ -28,6 +28,7 @@ eKomunizem
  - [ ] interface za deletanje submissionov (administracija)
  - [ ] interface za dodajanje profesorjev (administracija)
  - [ ] interface za pogledat gesla profesorjev (administracija)
+ - [ ] inject code by predmet_upload (uno s filename-om)
  - [ ] fix language (sumniki, jezik...)
  - [x] titles  
  - [x] mobile bug, background too short

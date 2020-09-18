@@ -60,13 +60,13 @@
 			</details>
 			<form enctype="multipart/form-data" action="services/upload.php" method="post">
 				<div class="question">Vnesi svoje ime:</div>
-				<input type="text" name="author" id="author_upload" class="answer" placeholder="Ime"><br>
+				<input type="text" name="author" id="author_upload" class="answer" placeholder="Ime" required><br>
 				<div class="question">Poimenuj svojo datoteko:</div>
-				<input type="text" name="title" id="title_upload" class="answer" placeholder="Naslov datoteke"><br>
+				<input type="text" name="title" id="title_upload" class="answer" placeholder="Naslov datoteke" required><br>
 				<div class="question">Katero snov vsebuje:</div>
-				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="Vsebina datoteke"><br>
+				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="Vsebina datoteke" required><br>
 				<div class="question">Izberi letnik:</div>
-				<select name="letnik" id="letnik_upload" class="answer">
+				<select name="letnik" id="letnik_upload" class="answer" required>
 					<option selected="true" disabled="disabled">Letnik</option>
 					<option value="1">1. Letnik</option>
 					<option value="2">2. Letnik</option>
@@ -74,17 +74,17 @@
 					<option value="4">4. Letnik</option>
 				</select><br>
 				<div class="question">Izberi profesorja:</div>
-				<select name="professor" id="professor_select" class="answer">
+				<select name="professor" id="professor_select" class="answer" required>
 					<option selected="true" disabled="disabled">Profesor</option>
 				</select><br>
 				<div class="question">Izberi predmet:</div>
-				<select name="predmet" id="predmet_select" class="answer">
+				<select name="predmet" id="predmet_select" class="answer" required>
 					<option selected="true" disabled="disabled">Predmet</option>
 				</select><br>
 				<div class="question">Izberi datoteko:</div>
-				<input type="file" name="file" id="file_upload" class="answer" onchange="findSize()"><br>
+				<input type="file" name="file" id="file_upload" class="answer" onchange="findSize()" required><br>
 				<div class="question">Koda za objavo</div>
-				<input type="password" name="code" id="coda_upload" class="answer"><br>
+				<input type="password" name="code" id="coda_upload" class="answer" required><br>
 				<div id="submit_query">
 	  				<input type="submit" id="submit" value="Oddaj datoteko">
 				</div>
