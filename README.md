@@ -32,7 +32,7 @@ eKomunizem
  - [ ] fix language (sumniki, jezik...)
  - [x] titles  
  - [x] mobile bug, background too short
- - [ ] gumbi za druge spletne strani
+ - [x] gumbi za druge spletne strani
  - [x] v navodila napisi kje se dobi kodo za objavo
  - [ ] date and letnik in submission
 
