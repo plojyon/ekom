@@ -34,6 +34,7 @@ eKomunizem
  - [x] mobile bug, background too short
  - [ ] gumbi za druge spletne strani
  - [x] v navodila napisi kje se dobi kodo za objavo
+ - [ ] date and letnik in submission
 
 <!--
  =============

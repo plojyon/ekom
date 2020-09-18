@@ -48,3 +48,5 @@ $statement->close();
 11. disconnect from database
     $conn->close();*/
 ?>
+<br>
+<a href="index.html">Domov</a>

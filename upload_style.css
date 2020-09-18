@@ -42,11 +42,12 @@ body {
 
 #submit_query {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	flex-direction: row-reverse;
 	margin-top: 3%;
 }
 
-#submit {
+#submit, #back {
 	border-radius: 8px;
 	width: 120px;
 	height: 30px;
@@ -56,6 +57,10 @@ body {
 #navodila {
 	font-size: 0.8em;
 	line-height: 1.7;
+	color: grey;
+}
+
+a {
 	color: grey;
 }
 
