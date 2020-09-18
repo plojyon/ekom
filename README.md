@@ -29,10 +29,10 @@ eKomunizem
  - [ ] interface za dodajanje profesorjev (administracija)
  - [ ] interface za pogledat gesla profesorjev (administracija)
  - [ ] fix language (sumniki, jezik...)
- - [ ] titles  
+ - [x] titles  
  - [x] mobile bug, background too short
  - [ ] gumbi za druge spletne strani
- - [ ] v navodila napisi kje se dobi kodo za objavo
+ - [x] v navodila napisi kje se dobi kodo za objavo
 
 <!--
  =============
