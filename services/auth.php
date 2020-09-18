@@ -49,4 +49,4 @@ $statement->close();
     $conn->close();*/
 ?>
 <br>
-<a href="index.html">Domov</a>
+<a href="../index.html">Domov</a>
