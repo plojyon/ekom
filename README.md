@@ -26,6 +26,8 @@ eKomunizem
  - [x] do something about the verified checkbox  
  - [ ] reCaptcha  
  - [ ] interface za deletanje submissionov (administracija)
+ - [ ] interface za dodajanje profesorjev (administracija)
+ - [ ] interface za pogledat gesla profesorjev (administracija)
  - [ ] fix language (sumniki, jezik...)
  - [ ] titles  
  - [ ] mobile bug, background too short

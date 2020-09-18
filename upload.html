@@ -8,6 +8,24 @@
 		<link rel="stylesheet" href="upload_style.css">
 		<script src="scripts/generate_predmeti.js"></script>
 		<script>
+			function findSize() {
+				var fileInput =  document.getElementById("file_upload");
+				var size = 0;
+				try { // Size returned in bytes.
+					size = fileInput.files[0].size;
+				} catch(e) {
+					var objFSO = new ActiveXObject("Scripting.FileSystemObject");
+					var e = objFSO.getFile( fileInput.value);
+					var fileSize = e.size;
+					size = fileSize;
+				}
+				if (size >= 8388608) {
+					alert("ne gre sori");
+					document.getElementById('file_upload').value= null;
+				}
+			}
+		</script>
+		<script>
 			window.onload = function() {
 				Object.keys(predmeti).forEach(addPredmet);
 				Object.keys(predmeti).forEach(addProfessors);
@@ -36,7 +54,7 @@
 				<p>Vnsei ime, po katerem te bodo drugi lahko prepoznali.<br>
 				Poimenuj datoteko, tako da bo jasno kaj vsebuje. Bodi cimbolj natancen.<br>
 				Vsebino opisi z besedami, ki so med seboj locene z vejico, za katero ni presledka (vaje,prvi letnik,matematika).<br>
-				Izberi se letnik, v katerem se snov jemlje, profesorja, ki je snov predaval in predmet.</p>
+				Izberi se letnik, v katerem se snov jemlje, profesorja, ki je snov predaval in predmet. Velikost datoteke najb bo manj od 8MB</p>
 			</details>
 			<form enctype="multipart/form-data" action="services/upload.php" method="post">
 				<div class="question">Vnesi svoje ime:</div>
@@ -62,7 +80,7 @@
 					<option selected="true" disabled="disabled">Predmet</option>
 				</select><br>
 				<div class="question">Izberi datoteko:</div>
-				<input type="file" name="file" id="file_upload" class="answer"><br>
+				<input type="file" name="file" id="file_upload" class="answer" onchange="findSize()"><br>
 				<div class="question">Koda za objavo</div>
 				<input type="password" name="code" id="coda_upload" class="answer"><br>
 				<div id="submit_query">
