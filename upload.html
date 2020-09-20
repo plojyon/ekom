@@ -15,14 +15,24 @@
 					size = fileInput.files[0].size;
 				} catch(e) {
 					var objFSO = new ActiveXObject("Scripting.FileSystemObject");
-					var e = objFSO.getFile( fileInput.value);
-					var fileSize = e.size;
-					size = fileSize;
+					var e = objFSO.getFile(fileInput.value);
+					size = e.size;
 				}
 				if (size >= 8388608) {
-					alert("ne gre sori");
+					alert("Velikost datoteke presega 8 MiB. Če datoteke ni mogoče razdeliti, se obrni na administratorja.");
 					document.getElementById('file_upload').value= null;
 				}
+			}
+
+			function trim_tags() {
+				element = document.getElementById("tags_upload");
+				tags = element.value.split(',');
+				new_tags = [];
+				for (tag in tags) {
+					new_tag = tags[tag].trim();
+					if (new_tag != "") new_tags.push(new_tag);
+				}
+				element.value = new_tags.join(",");
 			}
 		</script>
 		<script>
@@ -59,15 +69,15 @@
 				<b>Kodo za objavo dobiš pri kateremkoli profesorju ali šolski psihologinji.</b><br>
 				Za generiranje kode <a href="auth.html">klikni tukaj</a>.</p>
 			</details>
-			<form enctype="multipart/form-data" action="services/upload.php" method="post">
+			<form enctype="multipart/form-data" onsubmit="trim_tags()" action="services/upload.php" method="post">
 				<div class="question">* Ime ali psevdonim:</div>
 				<input type="text" name="author" id="author_upload" class="answer" placeholder="Vili Čar" required><br>
 				<div class="question">* Naslov oddaje (bodi izviren):</div>
 				<input type="text" name="title" id="title_upload" class="answer" placeholder="Rešene naloge iz vektorjev" required><br>
 				<div class="question">Oznake (tags):</div>
 				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="vektorji,premice,tocka"><br>
-				<div class="question">* Izberi letnik:</div>
-				<select name="letnik" id="letnik_upload" class="answer" required>
+				<div class="question">Izberi letnik:</div>
+				<select name="letnik" id="letnik_upload" class="answer">
 					<option selected="true" value="0">Vsi letniki / drugo</option>
 					<option value="1">1. Letnik</option>
 					<option value="2">2. Letnik</option>
@@ -88,7 +98,7 @@
 				<input type="password" name="code" id="coda_upload" class="answer" required><br>
 				<div id="submit_query">
 					<input type="submit" id="submit" value="Oddaj datoteko">
-					<input type="button" id="back" value="Nazaj" onclick = "window.location.href = 'index.html';">
+					<input type="button" id="back" value="Nazaj" onclick="window.location.href='index.html';">
 				</div>
 				<br>
 			</form>
