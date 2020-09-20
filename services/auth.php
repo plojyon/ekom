@@ -16,8 +16,8 @@
 			echo "Ustvarjena koda: " . $code;
 			$statement->close();
 
-			$statement = $conn->prepare("INSERT INTO codes (code,comment) VALUES (?,?)");
-			$statement->bind_param('is', $code,$_POST["comment"]);
+			$statement = $conn->prepare("INSERT INTO codes (code,comment,professor) VALUES (?,?,?)");
+			$statement->bind_param('iss', $code,$_POST["comment"],$_POST['uname']);
 			$statement->execute();
 
 			echo '<br><br><a href="../index.html">Domov</a>';
