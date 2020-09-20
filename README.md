@@ -4,9 +4,9 @@ Spletno mesto namenjeno deljenju zapiskov, nalog, skript, testov, ipd. na gimnaz
 Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
 
  <!-- Čč Šš Žž -->
- 
+
 ## Pre-launch checklist:
- - [ ] fix injection vulnerability by predmet_upload  
+ - [x] fix injection vulnerability by predmet_upload  
  - [ ] display date and letnik on submission  
  - [ ] add styling to unstyled pages
  - [ ] fix language (sumniki, jezik, ...)  

@@ -2,6 +2,36 @@
 
 include("../../credentials.php");
 
+$predmeti = [
+	"ang",
+	"bio",
+	"fil",
+	"fiz",
+	"fra",
+	"geo",
+	"gla",
+	"inf",
+	"ita",
+	"kem",
+	"lum",
+	"mat",
+	"nem",
+	"ped",
+	"psh",
+	"rus",
+	"slo",
+	"soc",
+	"spa",
+	"svz",
+	"uzg",
+	"zgo"
+];
+
+if (!in_array($_POST['predmet'], $predmeti)) {
+	echo "Predmet ne obstaja.";
+	exit();
+}
+
 $statement = $conn->prepare("SELECT code,used FROM codes WHERE code = ?");
 $statement->bind_param('i', $_POST["code"]);
 $statement->execute();
@@ -61,10 +91,9 @@ $statement->execute();
 
 $conn->close();
 
-
+// only redirect on success
+echo('<!-- Redirect back to index.html -->
+<meta http-equiv = "refresh" content = "0; url=../index.html" />
+<p>Oddaja uspešna. Preusmerjanje ...</p>
+<p>Če se ne zgodi nič, kliknite <a href="../index.html">tukaj</a>.</p>');
 ?>
-
-<!-- Redirect back to index.html -->
-<!--<meta http-equiv = "refresh" content = "0; url=../index.html" />
-<p>Preusmerjanje ...</p>
-<p>Če se ne zgodi nič, kliknite <a href="../index.html">tukaj</a>.</p>-->
