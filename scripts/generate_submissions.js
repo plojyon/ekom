@@ -1,7 +1,6 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-		//document.getElementById("demo").innerHTML = this.responseText;
 		console.log(this.responseText);
 		submissions = JSON.parse(this.responseText);
 		submissions.forEach(createSubmission);
@@ -86,6 +85,14 @@ function createSubmission(sub, index, arr) {
 	else
 		letnik.appendChild(document.createTextNode(sub.letnik+". letnik"));
 
+	type_icon = document.createElement("i");
+	type_icon.classList.add("fas");
+	type_icon.classList.add("fa-question");
+	type = document.createElement("p");
+	type.classList.add("type");
+	type.appendChild(type_icon);
+	type.appendChild(document.createTextNode(sub.type));
+
 	prof_icon = document.createElement("i");
 	prof_icon.classList.add("fas");
 	prof_icon.classList.add("fa-chalkboard-teacher");
@@ -105,6 +112,7 @@ function createSubmission(sub, index, arr) {
 	submission_info = document.createElement("div");
 	submission_info.classList.add("submission_info");
 	submission_info.appendChild(letnik);
+	submission_info.appendChild(type);
 	submission_info.appendChild(professor);
 	submission_info.appendChild(author);
 

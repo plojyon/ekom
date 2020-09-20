@@ -159,7 +159,7 @@ p.author, p.professor {
 	text-decoration: underline;
 }
 
-#letnik_contents, #predmet_contents {
+#letnik_contents, #predmet_contents, #type_contents, #profesor_contents {
 	margin-top: 0;
 	margin-bottom: 15px;
 }
@@ -207,11 +207,16 @@ p.author, p.professor {
 	margin-left: 0;
 	margin-right: 5px;
 }
+.type i {
+	margin-left: 4px;
+	margin-right: 9px;
+}
 .professor i {
 	margin-right: 5px;
 }
 .author i {
-	margin-right: 9px;
+	margin-left: 2px;
+	margin-right: 7px;
 }
 
 

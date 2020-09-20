@@ -2,7 +2,7 @@
 
 	include("../../credentials.php");
 
-	$ukaz = "SELECT * FROM prof_credentials WHERE username = ?";
+	$ukaz = "SELECT username,password FROM prof_credentials WHERE username = ?";
 
 	$statement = $conn->prepare($ukaz);
 	$statement->bind_param('s', $_POST["uname"]);

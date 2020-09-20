@@ -53,12 +53,6 @@
 		}
 	}
 
-	$statement = $conn->prepare("SELECT * FROM submissions");
-	$statement->execute();
-	$statement->store_result();
-	$rows = $statement->num_rows;
-	$statement->close();
-
 	$directory = "../files/";
 	$filecount = 0;
 	$files = glob($directory . "*");
@@ -69,11 +63,11 @@
 	$file = $_FILES['file'];
 	$extension = pathinfo($file['name'])["extension"];
 	$temp = $file['tmp_name'];
-	$filename = "zapiski_".$_POST["predmet"]."_".($filecount+1).".".$extension;
+	$filename = "LedinskiZapiski_" . $_POST["predmet"]."_".($filecount+1).".".$extension;
 	move_uploaded_file($temp, "../files/".$filename);
 
-	$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename, code)
-			 VALUES (?, ?, ?, ?, ?, NOW(), ?, ?, ?)";
+	$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename, type, code)
+			 VALUES (?, ?, ?, ?, ?, NOW(), ?, ?, ?, ?)";
 
 	$statement = $conn->prepare($ukaz);
 
@@ -84,6 +78,7 @@
 									   $_POST["tags"],
 									   $_POST["title"],
 									   $filename,
+									   $_POST["type"],
 								  	   $_POST["code"]);
 
 	$statement->execute();
