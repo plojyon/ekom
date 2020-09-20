@@ -39,7 +39,7 @@ p {
 body {
 	font-family: "Roboto";
 	margin: 0;
-	background-image: url("backgrounds/kemija.jpg");
+	background-image: url("media/backgrounds/kemija.jpg");
 	background-attachment: fixed;
 	background-position: center top;
 	background-size: cover;
