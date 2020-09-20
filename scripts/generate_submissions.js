@@ -10,70 +10,21 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "services/getSubmissions.php", true);
 xhttp.send();
 
-/*submissions = [
-
+/*
+submissions = [
 	{
-		"title": "Deutsche grammatik oder wendische Sprache",
-		"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
 		"author": "yon.je.ploj",
+		"professor": "Prof. Vojsk",
 		"predmet": "nem",
-		"professor": "Prof. Vojsk"
+		"letnik": 1,
+		"tags": ["Grammatik", "Prateritum", "Lehrbuch"],
+		"title": "Deutsche grammatik oder wendische Sprache",
+		"filename": "zapiski_kem_1.pdf"
 	},
-	{
-		"title": "Kuharske bukve",
-		"tags": ["kuharski vuk", "bukve", "hrana"],
-		"author": "vodnik.valentin",
-		"predmet": "psh",
-		"professor": "Prof. Ceklin"
-	},
-	{
-		"title": "Programiranje z Javo ali Zakaj so moje ocene slabe",
-		"tags": ["Ta nesrecni dan", "Maticek se zeni", "C/C++"],
-		"author": "spontana geneza datoteke",
-		"predmet": "inf",
-		"professor": "Prof. Burger"
-	},
-	{
-		"title": "Kemija v 1. letniku",
-		"tags": ["Kisline, baze in soli", "Poimenovanje", "Periodni sistem"],
-		"author": "masa.kovac",
-		"predmet": "kem",
-		"professor": "Prof. Cebin"
-	},
-	{
-		"title": "Moj zvezk",
-		"tags": [],
-		"author": "yon.ploj",
-		"predmet": "ped",
-		"professor": "Prof. Levstek"
-	},
-	{
-		"title": "Tvoj zvezk",
-		"tags": ["lep in urejen"],
-		"author": "yon.ploj",
-		"predmet": "mat",
-		"professor": "Prof. Levstek"
-	},
-	{
-		"title": "Recept za palacinke",
-		"tags": ["moka", "jajca", "mleko", "sladkor", "nutella"],
-		"author": "namazes z Nutello",
-		"predmet": "mat",
-		"professor": "speces u ponvi"
-	},
-	{
-		"title": "Kaj vse mam na mizi?",
-		"tags": ["zvezke", "cokolado", "racunalnik", "kozarce", "kroznike", "slusalke", "pisala", "domaco nalogo", "drobtine", "umazano zlico", "smeti", "vodko"],
-		"author": "sej bom pospravu",
-		"predmet": "svz",
-		"professor": "untidy geng"
-	},
-];
 */
 
 
 function createSubmission(sub, index, arr) {
-
 	//img = document.createElement("img");
 	//img.src = icon_link;
 	//img_div = document.createElement("div");
@@ -115,13 +66,33 @@ function createSubmission(sub, index, arr) {
 	spacer = document.createElement("div");
 	spacer.classList.add("spacer");
 
+	letnik_icon = document.createElement("i");
+	letnik_icon.classList.add("fas");
+	if (sub.letnik == 1)
+		letnik_icon.classList.add("fa-dice-one");
+	else if (sub.letnik == 2)
+		letnik_icon.classList.add("fa-dice-two");
+	else if (sub.letnik == 3)
+		letnik_icon.classList.add("fa-dice-three");
+	else if (sub.letnik == 4)
+		letnik_icon.classList.add("fa-dice-four");
+	else
+		letnik_icon.classList.add("fa-dice");
+	letnik = document.createElement("p");
+	letnik.classList.add("letnik");
+	letnik.appendChild(letnik_icon);
+	if (sub.letnik == 0)
+		letnik.appendChild(document.createTextNode("Vsi letniki"))
+	else
+		letnik.appendChild(document.createTextNode(sub.letnik+". letnik"));
+
 	prof_icon = document.createElement("i");
 	prof_icon.classList.add("fas");
 	prof_icon.classList.add("fa-chalkboard-teacher");
 	professor = document.createElement("p");
 	professor.classList.add("professor");
 	professor.appendChild(prof_icon);
-	professor.appendChild(document.createTextNode(" "+sub.professor));
+	professor.appendChild(document.createTextNode(sub.professor));
 
 	auth_icon = document.createElement("i");
 	auth_icon.classList.add("fas");
@@ -129,10 +100,11 @@ function createSubmission(sub, index, arr) {
 	author = document.createElement("p");
 	author.classList.add("author");
 	author.appendChild(auth_icon);
-	author.appendChild(document.createTextNode(" "+sub.author));
+	author.appendChild(document.createTextNode(sub.author));
 
 	submission_info = document.createElement("div");
 	submission_info.classList.add("submission_info");
+	submission_info.appendChild(letnik);
 	submission_info.appendChild(professor);
 	submission_info.appendChild(author);
 

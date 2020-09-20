@@ -7,8 +7,9 @@ Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
 
 ## Pre-launch checklist:
  - [x] fix injection vulnerability by predmet_upload  
- - [ ] display date and letnik on submission  
- - [ ] add styling to unstyled pages
+ - [x] display date and letnik on submission  
+ - [ ] add styling to unstyled pages  
+ - [ ] trim tags on upload.html  
  - [ ] fix language (sumniki, jezik, ...)  
  - [ ] clean code  
  - [ ] lepse ozadje / vec ozadij  
@@ -45,9 +46,15 @@ Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
  Tutorstvo (graduation cap)	<i class="fas fa-graduation-cap"></i>
  Objava zapiskov (knjiga)	<i class="fa fa-book"></i>
  Ledina website (stavba)	<i class="fa fa-school"></i>
- Download (floppy)          <i class="fas fa-save"></i>
- Upload (arrow)             <i class="fa fa-upload" aria-hidden="true"></i>
+ Download (floppy)			<i class="fas fa-save"></i>
+ Upload (arrow)				<i class="fa fa-upload" aria-hidden="true"></i>
 
+Letniki (kocke):
+ Prvi		<i class="fas fa-dice-one"></i>
+ Drugi		<i class="fas fa-dice-two"></i>
+ Tretji		<i class="fas fa-dice-three"></i>
+ Cetrti		<i class="fas fa-dice-four"></i>
+ Other		<i class="fas fa-dice"></i>
 
  Avtor in profesor:
  avtor						<i class="fas fa-pencil-alt"></i>

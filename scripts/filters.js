@@ -9,7 +9,7 @@ function refresh_filters() {
 		var submission_predmet = submission ["predmet"];
 		var submission_professor = submission ["professor"];
 		var elementname = document.getElementById(submission ["filename"]);
-		if ((filter_letnik == submission_letnik || filter_letnik == "") &&
+		if ((filter_letnik == submission_letnik || filter_letnik == "" || submission_letnik == "0") &&
 			//filter_verified == submission_verified &&//
 			(filter_predmet == submission_predmet || filter_predmet == "") &&
 			(filter_professor == submission_professor || filter_professor == "")) {

@@ -197,8 +197,15 @@ p.author, p.professor {
 	display: none; !important
 }
 
+.letnik i {
+	margin-right: 10px;
+	margin-left: 3px;
+}
+.professor i {
+	margin-right: 5px;
+}
 .author i {
-	margin-right: 4px;
+	margin-right: 9px;
 }
 
 @media only screen and (max-width: 800px) {
