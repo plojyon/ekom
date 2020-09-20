@@ -21,6 +21,7 @@ Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
  - [ ] interface za deletanje submissionov (administracija)  
  - [ ] interface za dodajanje profesorjev (administracija)  
  - [ ] interface za pogledat/menjat(?) gesla profesorjev (administracija)  
+
 <!--
  =============
  Ikone v rabi:
