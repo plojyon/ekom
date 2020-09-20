@@ -2,15 +2,28 @@
 <html lang="sl" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="upload.css">
+		<title>Generator avtorizacijskih kod</title>
 	</head>
 	<body>
-		<form action="services/auth.php" method="post">
-			<input type="text" name="uname" id="uname" placeholder="uname">
-			<input type="password" name="pword" id="pword" placeholder="pword">
-			<input type="text" name="comment" id="comment"  placeholder="comment">
-			<input type="submit" id="submit" value="Go">
+		<form action="services/auth.php" method="post" id="basic_form">
+			<div id="form_header">
+				Generator avtorizacijskih kod
+			</div>
+			<div class="question">Uporabniško ime:</div>
+			<input type="password" name="uname" class="answer" placeholder="" required><br>
+			<div class="question">Geslo:</div>
+			<input type="password" name="pword" class="answer" placeholder="" required><br>
+			<div class="question">Komentar:</div>
+			<textarea rows="3" name="comment" class="answer" placeholder="komu je namenjena koda (obvezno)" required></textarea><br>
+			<br>
+			<div id="submit_query">
+				<input type="submit" id="submit" value="Generiraj kodo">
+				<input type="button" id="back" value="Domov" onclick="window.location.href='index.html';">
+			</div>
+			<br>
 		</form>
-		<a href="index.html">Domov</a>
 	</body>
 </html>
