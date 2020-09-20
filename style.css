@@ -197,9 +197,15 @@ p.author, p.professor {
 	display: none; !important
 }
 
+
+/* adjust margins to align icons due to various width */
 .letnik i {
-	margin-right: 10px;
+	margin-right: 9px;
 	margin-left: 3px;
+}
+.letnik i.fa-dice { /* vsi predmeti icon is slightly wider */
+	margin-left: 0;
+	margin-right: 5px;
 }
 .professor i {
 	margin-right: 5px;
@@ -207,6 +213,7 @@ p.author, p.professor {
 .author i {
 	margin-right: 9px;
 }
+
 
 @media only screen and (max-width: 800px) {
 	main {
