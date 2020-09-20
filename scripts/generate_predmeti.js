@@ -132,7 +132,6 @@ predmeti = {
 		"prof": [
 			"Nadja Gliha Olenik",
 			"Matejka Kuhar",
-			"Matejka Kuhar",
 			"Helena Osterman",
 			"Alenka Vojsk",
 		]
@@ -193,7 +192,6 @@ predmeti = {
 			"Bojana Bizjan",
 			"Tomaž Karče",
 			"Miha Kobe",
-			"Nataša Korošec",
 			"Nataša Korošec",
 			"Urša Šilc Trček",
 			"Blanka Tomac",
