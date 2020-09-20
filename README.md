@@ -1,41 +1,25 @@
 # ekom
-eKomunizem
+(Ledinski zapiski)  
+Spletno mesto namenjeno deljenju zapiskov, nalog, skript, testov, ipd. na gimnaziji Ledina.  
+Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
+
  <!-- Čč Šš Žž -->
-
-## TODO:
- - [x] upload.php mora povedat bazi za nov submission  
- - [x] baza rabi nove stolpce, ki jih mora getSubmissions prepoznat  
- - [x] js funkcija ki generira html za profesorje in predmete  
- - [x] noresults se mora generirat  
- - [x] upload style mobile  
- - [x] navodila za upload  
- - [x] mobile site rab link do upload.html  
- - [x] preden submita nej js preveri ali so vsa polja izpolnjena  
- - [x] recruitment message  
- - [x] make file number dependent on number of files, not numbers of $rows+1  
- - [x] upload.html mora met disabled opcijo 'izberi profesorja in predmet'  
- - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev (optional)  
- - [x] placeholderji na upload page  
- - [x] remove first submission ne da pokvars use  
- - [x] mobile site (mandatory af)  
- - [ ] dodaj vec submissionov  
- - [x] odstrani nepomebne zadeve (filter by tags)  
- - [ ] ozadje in testi z njim  
+ 
+## Pre-launch checklist:
+ - [ ] fix injection vulnerability by predmet_upload  
+ - [ ] display date and letnik on submission  
+ - [ ] add styling to unstyled pages
+ - [ ] fix language (sumniki, jezik, ...)  
  - [ ] clean code  
- - [x] dodaj svoj podpis  
- - [x] do something about the verified checkbox  
- - [ ] reCaptcha  
- - [ ] interface za deletanje submissionov (administracija)
- - [ ] interface za dodajanje profesorjev (administracija)
- - [ ] interface za pogledat gesla profesorjev (administracija)
- - [ ] inject code by predmet_upload (uno s filename-om)
- - [ ] fix language (sumniki, jezik...)
- - [x] titles  
- - [x] mobile bug, background too short
- - [x] gumbi za druge spletne strani
- - [x] v navodila napisi kje se dobi kodo za objavo
- - [ ] date and letnik in submission
+ - [ ] lepse ozadje / vec ozadij  
+ - [ ] dodaj vec submissionov  
 
+### After release:
+ - [ ] reCaptcha  
+ - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev  
+ - [ ] interface za deletanje submissionov (administracija)  
+ - [ ] interface za dodajanje profesorjev (administracija)  
+ - [ ] interface za pogledat/menjat(?) gesla profesorjev (administracija)  
 <!--
  =============
  Ikone v rabi:
