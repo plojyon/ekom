@@ -8,9 +8,9 @@ Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
 ## Pre-launch checklist:
  - [x] fix injection vulnerability by predmet_upload  
  - [x] display date and letnik on submission  
- - [ ] add styling to unstyled pages  
- - [ ] trim tags on upload.html  
- - [ ] fix language (sumniki, jezik, ...)  
+ - [x] add styling to unstyled pages  
+ - [x] trim tags on upload.html  
+ - [x] fix language (sumniki, jezik, ...)  
  - [ ] clean code  
  - [ ] lepse ozadje / vec ozadij  
  - [ ] dodaj vec submissionov  
