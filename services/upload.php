@@ -44,7 +44,7 @@ if ($rows == 0) {
 $statement->bind_result($code,$used);
 while ($statement->fetch()) {
 	if ($used == true) {
-		echo "Koda je ze bila uporabljena.";
+		echo "Koda je že bila uporabljena.";
 		exit();
 	}
 }
@@ -97,3 +97,5 @@ echo('<!-- Redirect back to index.html -->
 <p>Oddaja uspešna. Preusmerjanje ...</p>
 <p>Če se ne zgodi nič, kliknite <a href="../index.html">tukaj</a>.</p>');
 ?>
+<br><br>
+<a href="../index.html">Domov</a>

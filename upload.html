@@ -51,42 +51,41 @@
 				Obrazec za objavo datoteke
 			</div>
 			<details id="navodila">
-				<summary>Ce ne znas izpolitni obrazca klikni tukaj:</summary>
-				<p>Vnsei ime, po katerem te bodo drugi lahko prepoznali.<br>
-				Poimenuj datoteko, tako da bo jasno kaj vsebuje. Bodi cimbolj natancen.<br>
-				Vsebino opisi z besedami, ki so med seboj locene z vejico, za katero ni presledka (vaje,prvi letnik,matematika).<br>
-				Izberi se letnik, v katerem se snov jemlje, profesorja, ki je snov predaval in predmet.<br>
-				Velikost datoteke najb bo manj od 8MB.<br>
-				Kodo za objavo se dobi pri profesorju, ki te uci.<br>
-				Za generiranje kode <a href="auth.html">klikni tukaj</a></p>
+				<summary>Navodila za izpolnjevanje:</summary>
+				<p>Izberi si unikatno ime ali psevdonim, po katerem boš znan na Ledinskih zapiskih. Registracija ni potrebna.<br>
+				Poimenuj datoteko, tako da bo jasno kaj vsebuje. Bodi čim bolj natančen in izviren.<br>
+				Vsebino opiši z oznakami, ločenimi z vejicami.<br>
+				Izberi letnik, v katerem se snov jemlje in profesorja, ki je snov predaval.<br>
+				<b>Velikost datoteke naj bo manj kot 8 MiB.</b> Če velikost presega omejitev, razdeli snov na več poglavij. Če to ni možno, se obrni na administratorja.<br>
+				<b>Kodo za objavo dobiš pri kateremkoli profesorju ali šolski psihologinji.</b><br>
+				Za generiranje kode <a href="auth.html">klikni tukaj</a>.</p>
 			</details>
 			<form enctype="multipart/form-data" action="services/upload.php" method="post">
-				<div class="question">Vnesi svoje ime:</div>
-				<input type="text" name="author" id="author_upload" class="answer" placeholder="Ime" required><br>
-				<div class="question">Poimenuj svojo datoteko:</div>
-				<input type="text" name="title" id="title_upload" class="answer" placeholder="Naslov datoteke" required><br>
-				<div class="question">Katero snov vsebuje:</div>
-				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="Vsebina datoteke" required><br>
-				<div class="question">Izberi letnik:</div>
+				<div class="question">* Ime ali psevdonim:</div>
+				<input type="text" name="author" id="author_upload" class="answer" placeholder="Vili Čar" required><br>
+				<div class="question">* Naslov oddaje (bodi izviren):</div>
+				<input type="text" name="title" id="title_upload" class="answer" placeholder="Rešene naloge iz vektorjev" required><br>
+				<div class="question">Oznake (tags):</div>
+				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="vektorji,premice,tocka"><br>
+				<div class="question">* Izberi letnik:</div>
 				<select name="letnik" id="letnik_upload" class="answer" required>
-					<option selected="true" disabled="disabled">Letnik</option>
+					<option selected="true" value="0">Vsi letniki / drugo</option>
 					<option value="1">1. Letnik</option>
 					<option value="2">2. Letnik</option>
 					<option value="3">3. Letnik</option>
 					<option value="4">4. Letnik</option>
-					<option value="0">Vsi letniki / drugo</option>
 				</select><br>
 				<div class="question">Izberi profesorja:</div>
-				<select name="professor" id="professor_select" class="answer" required>
-					<option selected="true" disabled="disabled">Profesor</option>
+				<select name="professor" id="professor_select" class="answer">
+					<option selected="true" value="">Brez profesorja</option>
 				</select><br>
-				<div class="question">Izberi predmet:</div>
+				<div class="question">* Izberi predmet:</div>
 				<select name="predmet" id="predmet_select" class="answer" required>
 					<option selected="true" disabled="disabled">Predmet</option>
 				</select><br>
-				<div class="question">Izberi datoteko:</div>
+				<div class="question">* Naloži datoteko (do 8 MB):</div>
 				<input type="file" name="file" id="file_upload" class="answer" onchange="findSize()" required><br>
-				<div class="question">Koda za objavo</div>
+				<div class="question">* Koda za objavo <sup><a onclick="document.getElementById('navodila').open = true;">[?]</a></sup></div>
 				<input type="password" name="code" id="coda_upload" class="answer" required><br>
 				<div id="submit_query">
 	  				<input type="submit" id="submit" value="Oddaj datoteko">
