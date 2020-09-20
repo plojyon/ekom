@@ -67,12 +67,13 @@
 				Izberi letnik, v katerem se snov jemlje in profesorja, ki je snov predaval.<br>
 				<b>Velikost datoteke naj bo manj kot 8 MiB.</b> Če velikost presega omejitev, razdeli snov na več poglavij. Če to ni možno, se obrni na administratorja.<br>
 				<b>Kodo za objavo dobiš pri kateremkoli profesorju ali šolski psihologinji.</b><br>
-				Za generiranje kode <a href="auth.html">klikni tukaj</a>.</p>
+				Za generiranje kode <a href="auth.html">klikni tukaj</a>.<br><br>
+				Vsa polja označena z * so obvezna.</p>
 			</details>
 			<form enctype="multipart/form-data" onsubmit="trim_tags()" action="services/upload.php" method="post">
 				<div class="question">* Ime ali psevdonim:</div>
 				<input type="text" name="author" id="author_upload" class="answer" placeholder="Vili Čar" required><br>
-				<div class="question">* Naslov oddaje (bodi izviren):</div>
+				<div class="question">* Izviren naslov:</div>
 				<input type="text" name="title" id="title_upload" class="answer" placeholder="Rešene naloge iz vektorjev" required><br>
 				<div class="question">Oznake (tags):</div>
 				<input type="text" name="tags" id="tags_upload" class="answer" placeholder="vektorji,premice,tocka"><br>
@@ -101,7 +102,7 @@
 				</select><br>
 				<div class="question">* Naloži datoteko (do 8 MB):</div>
 				<input type="file" name="file" id="file_upload" class="answer" onchange="findSize()" required><br>
-				<div class="question">* Koda za objavo <sup><a onclick="document.getElementById('navodila').open = true;">[?]</a></sup></div>
+				<div class="question">* Koda za objavo: <sup><a onclick="document.getElementById('navodila').open = true;">[?]</a></sup></div>
 				<input type="password" name="code" id="coda_upload" class="answer" required><br>
 				<div id="submit_query">
 					<input type="submit" id="submit" value="Oddaj datoteko">

@@ -16,6 +16,7 @@ Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
  - [ ] dodaj vec submissionov  
 
 ### After release:
+ - [ ] generator kod nej se preprica da generirana koda se ne obstaja
  - [ ] reCaptcha  
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev  
  - [ ] interface za deletanje submissionov (administracija)  
