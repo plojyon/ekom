@@ -20,7 +20,7 @@ function refresh_filters() {
 	});
 	noresult.classList.add("hidden");
 	var count_hidden = document.querySelectorAll(".hidden").length;
-	var count_all = document.getElementById("submissions_list").childElementCount;
+	var count_all = document.getElementById("submissions_list").childElementCount-1;
 	if (count_all == count_hidden) {
 		noresult.classList.remove("hidden");
 	} else {
