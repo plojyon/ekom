@@ -53,6 +53,10 @@
 				exit();
 			}
 		}
+		$code = $_POST['code'];
+	}
+	else {
+		$code = "0"; // code must be an int
 	}
 
 	$directory = "../files/";
@@ -68,12 +72,12 @@
 	$filename = "LedinskiZapiski_" . $_POST["predmet"]."_".($filecount+1).".".$extension;
 	move_uploaded_file($temp, "../files/".$filename);
 
-	$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, datum, title, filename, type, code)
-			 VALUES (?, ?, ?, ?, ?, NOW(), ?, ?, ?, ?)";
+	$ukaz = "INSERT INTO submissions (author, professor, predmet, letnik, tags, title, filename, type, code)
+			 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 	$statement = $conn->prepare($ukaz);
 
-	$statement->bind_param('sssisssi', $_POST["author"],
+	$statement->bind_param('sssissssi', $_POST["author"],
 									   $_POST["professor"],
 									   $_POST["predmet"],
 									   $_POST["letnik"],
@@ -81,12 +85,12 @@
 									   $_POST["title"],
 									   $filename,
 									   $_POST["type"],
-								  	   $_POST["code"]);
+								  	   $code);
 
 	$statement->execute();
 
 	$statement = $conn->prepare("UPDATE codes SET used = true WHERE code = ?");
-	$statement->bind_param('i', $_POST["code"]);
+	$statement->bind_param('i', $code);
 	$statement->execute();
 
 	$conn->close();
