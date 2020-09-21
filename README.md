@@ -1,21 +1,11 @@
-# ekom
-(Ledinski zapiski)  
-Spletno mesto namenjeno deljenju zapiskov, nalog, skript, testov, ipd. na gimnaziji Ledina.  
-Objavljeno na [tutorstvo.ledina.si/ekom](https://tutorstvo.ledina.si/ekom)
+# Ledinski Zapiski
+Spletno mesto namenjeno deljenju zapiskov, nalog, skript, testov, vaj, ipd. na gimnaziji Ledina.  
+Objavljeno na [tutorstvo.ledina.si/zapiski](https://tutorstvo.ledina.si/zapiski)
 
  <!-- Čč Šš Žž -->
 
-## Pre-launch checklist:
- - [x] fix injection vulnerability by predmet_upload  
- - [x] display date and letnik on submission  
- - [x] add styling to unstyled pages  
- - [x] trim tags on upload.html  
- - [x] fix language (sumniki, jezik, ...)  
- - [ ] clean code  
- - [ ] lepse ozadje / vec ozadij  
- - [ ] dodaj vec submissionov  
-
-### After release:
+## TODO:
+ - [ ] filter by extension (filetype)
  - [ ] generator kod nej se preprica da generirana koda se ne obstaja
  - [ ] reCaptcha  
  - [ ] najprej se izbere predmet, potem ti ponudi seznam profesorjev  
